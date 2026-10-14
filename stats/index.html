@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Visitors</title>
+<link rel="icon" href="/favicon.ico" sizes="any">
+<style>
+@font-face{font-family:"Stardos Stencil";src:url(/fonts/stardos-stencil-700.woff2) format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"Courier Prime";src:url(/fonts/courier-prime-400.woff2) format("woff2");font-weight:400;font-display:swap}
+:root{--night:#181a0d;--olive:#2f3419;--olive-l:#4a5030;--paper:#f4efe1;--paper2:#e6e0cc;--ink:#1f1d17;--muted:#5a5444;--khaki:#d8c98f;--red:#a3261e;--bar:#4a5030;--track:#e6e0cc;
+--disp:"Stardos Stencil",Impact,"Arial Narrow",sans-serif;--mono:"Courier Prime",Courier,monospace;--body:Georgia,"Times New Roman",serif}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);line-height:1.45}
+header{background:var(--night);color:var(--paper);padding:18px 16px}
+header .in,main{max-width:900px;margin:0 auto}
+header a{color:var(--khaki);text-decoration:none;font-family:var(--disp);letter-spacing:.06em}
+h1{font-family:var(--disp);font-size:clamp(28px,6vw,42px);letter-spacing:.03em;margin:6px 0 0;font-weight:700}
+main{padding:20px 16px 60px}
+.note{font-size:15px;color:var(--muted);margin:0 0 18px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 14px}
+#sites button{font-family:var(--disp);font-size:17px;letter-spacing:.04em}
+.tabs button{font-family:var(--mono);font-size:15px;padding:8px 14px;border:2px solid var(--olive);background:transparent;color:var(--olive);border-radius:6px;cursor:pointer}
+.tabs button[aria-pressed=true]{background:var(--olive);color:var(--paper)}
+.big{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 0 22px}
+.big div{background:#fff;border:1px solid var(--paper2);border-radius:10px;padding:14px}
+.big b{display:block;font-family:var(--disp);font-size:clamp(28px,7vw,44px);line-height:1;color:var(--olive)}
+.big span{font-family:var(--mono);font-size:13px;color:var(--muted)}
+section{background:#fff;border:1px solid var(--paper2);border-radius:10px;padding:16px;margin:0 0 16px}
+h2{font-family:var(--disp);font-size:20px;letter-spacing:.04em;margin:0 0 4px;color:var(--olive)}
+h2 + p{margin:0 0 12px;font-size:14px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.row{display:grid;grid-template-columns:minmax(0,1fr) 46px;gap:8px;align-items:center;margin:6px 0;font-size:15px}
+.row .lab{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.row .num{text-align:right;font-family:var(--mono)}
+.row .trk{grid-column:1/-1;height:8px;background:var(--track);border-radius:4px;overflow:hidden;margin-top:-2px}
+.row .trk i{display:block;height:100%;background:var(--bar);border-radius:4px}
+.days{display:flex;align-items:flex-end;gap:2px;height:140px;border-bottom:1px solid var(--paper2);padding-top:6px}
+.days div{flex:1;background:var(--bar);border-radius:2px 2px 0 0;min-height:2px;position:relative}
+.days div:hover{background:var(--red)}
+.axis{display:flex;justify-content:space-between;font-family:var(--mono);font-size:12px;color:var(--muted);margin-top:4px}
+.tip{font-family:var(--mono);font-size:13px;color:var(--muted);min-height:18px;margin-top:6px}
+.empty{color:var(--muted);font-style:italic;font-size:15px}
+.err{background:#fff;border-left:4px solid var(--red);padding:14px;border-radius:6px}
+.apps{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:0 0 14px}
+.apps div{background:var(--paper);border-radius:8px;padding:10px}
+.apps b{display:block;font-family:var(--disp);font-size:clamp(24px,6vw,34px);line-height:1;color:var(--olive)}
+.apps span{font-family:var(--mono);font-size:12px;color:var(--muted)}
+table.ag{width:100%;border-collapse:collapse;font-size:15px}
+table.ag th{font-family:var(--mono);font-size:12px;font-weight:400;color:var(--muted);text-align:right;padding:4px 6px;border-bottom:1px solid var(--paper2)}
+table.ag th:first-child,table.ag td:first-child{text-align:left}
+table.ag td{text-align:right;padding:7px 6px;border-bottom:1px solid var(--paper2);font-family:var(--mono)}
+table.ag td:first-child{font-family:var(--body)}
+.small{font-size:13px;color:var(--muted);margin:10px 0 0}
+@media (max-width:640px){.apps{grid-template-columns:1fr 1fr 1fr}.apps span{font-size:11px}}
+@media (max-width:640px){.grid{grid-template-columns:1fr}.big{grid-template-columns:1fr 1fr}.big div:first-child{grid-column:1/-1}}
+</style>
+</head>
+<body>
+<header><div class="in"><a href="/">DZ CHARLIE</a><h1>Real visitors</h1></div></header>
+<main>
+<p class="note">Counts real people only. Search-engine robots are left out, and so are your own visits: for DZ Charlie on any device where you've opened this page, for PakMondo on any device where you've opened pakmondo.com/?me=1 once. A person is counted once per day.</p>
+<div class="tabs" role="group" aria-label="Website" id="sites">
+  <button data-s="dzcharlie" aria-pressed="true">DZ Charlie</button><button data-s="pakmondo">PakMondo</button>
+</div>
+<div class="tabs" role="group" aria-label="Period" id="periods">
+  <button data-d="1">Today</button><button data-d="7">7 days</button><button data-d="30" aria-pressed="true">30 days</button><button data-d="90">90 days</button><button data-d="365">1 year</button>
+</div>
+<div id="out"><p class="empty">Loading…</p></div>
+</main>
+<script>
+/* Opening this page marks this device as yours, so your own visits are not counted. */
+try{localStorage.setItem('dz_me','1')}catch(e){}
+var KEY=(location.hash||'').slice(1),SITE='dzcharlie',DAYS=30,URL_='https://yltrecaajqaioduovlio.supabase.co/rest/v1/rpc/visitor_stats_site',PK='sb_publishable_m7a_N2Q1OHS0zqcu4QDHXg_2iA6ZIBd';
+var names;try{names=new Intl.DisplayNames(['en'],{type:'region'})}catch(e){}
+function country(c){if(!c||c==='?'||c==='XX'||c==='T1')return 'Unknown';try{return names?names.of(c):c}catch(e){return c}}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function bars(list,lab,val){if(!list.length)return '<p class="empty">Nothing yet.</p>';var m=Math.max.apply(null,list.map(function(x){return x[val]}))||1;
+  return list.map(function(x){return '<div class="row"><span class="lab">'+esc(lab(x))+'</span><span class="num">'+x[val]+'</span><span class="trk"><i style="width:'+(100*x[val]/m)+'%"></i></span></div>'}).join('')}
+function fmt(d){return new Date(d+'T12:00:00').toLocaleDateString('en-GB',{day:'numeric',month:'short'})}
+function load(days){DAYS=days;
+  document.querySelectorAll('#periods button').forEach(function(b){b.setAttribute('aria-pressed',String(+b.dataset.d===days))});
+  document.querySelectorAll('#sites button').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.s===SITE))});
+  fetch(URL_,{method:'POST',headers:{apikey:PK,'Content-Type':'application/json'},body:JSON.stringify({p_key:KEY,p_site:SITE,p_days:days})})
+  .then(function(r){if(!r.ok)throw new Error(r.status);return r.json()}).then(function(s){draw(s,days)})
+  .catch(function(){document.getElementById('out').innerHTML='<div class="err">Could not load the numbers. Check you opened the full private link (it ends with # and a code), and that you are online.</div>'})}
+function appsBox(s){
+  var g=(s.by_guide_apps||[]).filter(function(x){return x.guide!=='Home page'||x.installs||x.app_users||x.pdfs});
+  var rows=g.map(function(x){return '<tr><td>'+esc(x.guide)+'</td><td>'+(x.installs||0)+'</td><td>'+(x.app_users||0)+'</td><td>'+(x.pdfs||0)+'</td></tr>'}).join('');
+  return '<section><h2>Installs &amp; downloads</h2><p>People who put a guide on their phone, use it from the home-screen icon, or downloaded a PDF.</p>'
+   +'<div class="apps"><div><b>'+(s.installs||0)+'</b><span>installed the app</span></div><div><b>'+(s.app_users||0)+'</b><span>used it from the home screen</span></div><div><b>'+(s.pdfs||0)+'</b><span>PDF downloads</span></div></div>'
+   +'<table class="ag"><thead><tr><th>Guide</th><th>Installed</th><th>Home screen</th><th>PDFs</th></tr></thead><tbody>'+rows+'</tbody></table>'
+   +(s.top_pdfs&&s.top_pdfs.length?'<h2 style="margin-top:16px;font-size:17px">Which PDFs</h2>'+bars(s.top_pdfs,function(x){return (x.file||'?').replace(/\.pdf$/i,'').replace(/[-_]/g,' ')},'downloads'):'')
+   +'<p class="small">"Installed" is reported by Android phones and computers. iPhones never report an install, so iPhone users show up under "Home screen" once they open the guide from its icon. Each person is counted once a day. Counting began in October 2026.</p></section>'}
+function draw(s,days){
+  var byDay={};s.by_day.forEach(function(x){byDay[x.day]=x});
+  var list=[],end=new Date(),start=new Date(s.since+'T12:00:00');
+  for(var d=new Date(start);d<=end;d.setDate(d.getDate()+1)){var k=d.toISOString().slice(0,10);list.push({day:k,visitors:(byDay[k]||{}).visitors||0})}
+  var mx=Math.max.apply(null,list.map(function(x){return x.visitors}))||1;
+  var dayChart=days>1?'<section><h2>People per day</h2><p>Tap or hover a bar to see the day.</p><div class="days">'+list.map(function(x){return '<div tabindex="0" title="'+fmt(x.day)+': '+x.visitors+'" data-t="'+fmt(x.day)+': '+x.visitors+' people" style="height:'+(100*x.visitors/mx)+'%"></div>'}).join('')+'</div><div class="axis"><span>'+fmt(list[0].day)+'</span><span>'+fmt(list[list.length-1].day)+'</span></div><div class="tip" id="tip"></div></section>':'';
+  document.getElementById('out').innerHTML=
+   '<div class="big"><div><b>'+(days===1?s.today:s.by_day.reduce(function(a,x){return a+x.visitors},0))+'</b><span>'+(days===1?'people today':'visits by real people')+'</span></div><div><b>'+s.today+'</b><span>people today</span></div><div><b>'+s.pageviews+'</b><span>pages looked at</span></div></div>'
+   +(SITE==='dzcharlie'?appsBox(s):'')
+   +dayChart
+   +'<div class="grid"><section><h2>'+(SITE==='pakmondo'?'App or demo':'Which guide')+'</h2><p>People who opened each part.</p>'+bars(s.by_guide,function(x){return x.guide},'visitors')+'</section>'
+   +'<section><h2>Where from</h2><p>Country of the visitor.</p>'+bars(s.by_country,function(x){return country(x.country)},'visitors')+'</section>'
+   +'<section><h2>How they found you</h2><p>The site they came from.</p>'+bars(s.by_source,function(x){return x.source},'visitors')+'</section>'
+   +'<section><h2>Device</h2><p>What they used.</p>'+bars(s.by_device,function(x){var p=x.device.split('-');return p[0].charAt(0).toUpperCase()+p[0].slice(1)+(p[1]?' (installed app)':'')},'visitors')+'</section></div>'
+   +'<section><h2>Most-viewed pages</h2><p>Every time a page was opened.</p>'+bars(s.top_pages,function(x){return x.path==='/'?'Home page':x.path},'views')+'</section>';
+  document.querySelectorAll('.days div').forEach(function(el){function show(){document.getElementById('tip').textContent=el.dataset.t}el.addEventListener('mouseenter',show);el.addEventListener('focus',show);el.addEventListener('click',show)});
+}
+document.querySelectorAll('#periods button').forEach(function(b){b.addEventListener('click',function(){load(+b.dataset.d)})});
+document.querySelectorAll('#sites button').forEach(function(b){b.addEventListener('click',function(){SITE=b.dataset.s;load(DAYS)})});
+load(30);
+</script>
+</body>
+</html>

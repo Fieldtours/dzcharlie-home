@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>DZ Charlie — Free WWII &amp; Spanish Civil War Battlefield Field Guides</title>
+<meta name="description" content="Free WWII and Spanish Civil War battlefield field guides for your phone. Follow Easy Company through Normandy, Market Garden, Bastogne, Germany and Austria, the Allied campaign in Italy 1943–1945, and the Spanish Civil War — routes, maps and stories that work with no signal.">
+<meta name="theme-color" content="#181a0d">
+<meta property="og:title" content="DZ Charlie — Every battlefield has a story">
+<meta property="og:description" content="Free field guides that turn a road trip into a journey through history. Works with no signal.">
+<meta property="og:image" content="https://dzcharlie.com/welcome-wide.jpg">
+<meta property="og:url" content="https://dzcharlie.com/">
+<meta property="og:site_name" content="DZ Charlie">
+<link rel="canonical" href="https://dzcharlie.com/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://dzcharlie.com/welcome-wide.jpg">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "DZ Charlie", "url": "https://dzcharlie.com/", "logo": "https://dzcharlie.com/icon-512.png", "description": "Free self-guided battlefield field guides for your phone."}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "DZ Charlie", "url": "https://dzcharlie.com/", "description": "Free self-guided battlefield field guides for your phone: Easy Company in WWII, the Allied campaign in Italy 1943–1945, and the Spanish Civil War.", "inLanguage": "en"}</script>
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preload" as="image" href="welcome-wide.jpg">
+<style>
+@font-face{font-family:"Stardos Stencil";font-weight:400;font-display:swap;src:url(fonts/stardos-stencil-400.woff2) format("woff2")}
+@font-face{font-family:"Stardos Stencil";font-weight:700;font-display:swap;src:url(fonts/stardos-stencil-700.woff2) format("woff2")}
+@font-face{font-family:"Special Elite";font-weight:400;font-display:swap;src:url(fonts/special-elite-400.woff2) format("woff2")}
+@font-face{font-family:"Courier Prime";font-weight:400;font-display:swap;src:url(fonts/courier-prime-400.woff2) format("woff2")}
+@font-face{font-family:"Courier Prime";font-weight:700;font-display:swap;src:url(fonts/courier-prime-700.woff2) format("woff2")}
+:root{--night:#181a0d;--olive:#2f3419;--olive-l:#4a5030;--paper:#f4efe1;--paper2:#e6e0cc;--ink:#1f1d17;--ink2:#3a3629;--muted:#4a4536;--khaki:#d8c98f;--red:#a3261e;--red-l:#e8573f;--red-t:#8f2119;
+ --scw:#3d2b1f;--scw-t:#f1e6c9;--scw-k:#e0b86a;--ww1:#3f5561;--ie:#22392b;--ie-t:#f2ecd9;--ie-k:#e4b65c;
+ --disp:"Stardos Stencil",Impact,"Arial Narrow",sans-serif;--label:"Special Elite","Courier New",monospace;--mono:"Courier Prime","Courier New",monospace;--body:Georgia,"Times New Roman",serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.5;-webkit-text-size-adjust:100%}
+img{max-width:100%;display:block}
+a{color:var(--red-t)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--red-l);outline-offset:3px}
+.wrap{max-width:1280px;margin:0 auto;padding:0 clamp(16px,5vw,80px)}
+.eyebrow{font-family:var(--label);font-size:15px;letter-spacing:4px;color:var(--red-t);text-transform:uppercase}
+h1,h2,h3{font-family:var(--disp);font-weight:700;margin:0;line-height:1;letter-spacing:.5px}
+.grid{background-image:linear-gradient(rgba(216,201,143,.10) 1px,transparent 1px),linear-gradient(90deg,rgba(216,201,143,.10) 1px,transparent 1px);background-size:64px 64px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;font-family:var(--mono);font-weight:700;font-size:18px;padding:14px 28px;text-decoration:none;border:2px solid transparent}
+.btn.red{background:var(--red);color:#fff}.btn.red:hover{background:#86201a;color:#fff}
+.btn.line{border-color:currentColor;color:inherit}.btn.line:hover{background:rgba(255,255,255,.08)}
+
+/* HERO */
+.hero{position:relative;overflow:hidden;background:var(--night);color:#ece4cc}
+.hero .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 85%}
+.hero .top{position:absolute;inset:0;background:linear-gradient(180deg,rgba(24,26,13,.95) 0,rgba(24,26,13,.75) 22%,rgba(24,26,13,0) 50%)}
+.hero .shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(24,26,13,.96) 0%,rgba(24,26,13,.88) 42%,rgba(24,26,13,.35) 75%,rgba(24,26,13,.55) 100%)}
+.hero .grid{position:absolute;inset:0}
+.nav{position:relative;z-index:3;display:flex;align-items:center;justify-content:space-between;height:88px;border-bottom:1px solid rgba(236,228,204,.25)}
+.brand{display:flex;align-items:center;gap:14px;color:#ece4cc;text-decoration:none}
+.brand .dz{width:46px;height:46px;border:2px solid #ece4cc;display:flex;align-items:center;justify-content:center;font-family:var(--disp);font-weight:700;font-size:18px}
+.brand b{display:block;font-family:var(--disp);font-size:24px;letter-spacing:3px;line-height:1.1}
+.brand small{display:block;font-family:var(--label);font-size:12px;letter-spacing:3px;color:var(--khaki)}
+.menu{display:flex;align-items:center;gap:32px}
+.menu a{color:#ece4cc;text-decoration:none;font-family:var(--mono);font-weight:700;font-size:16px}
+.menu a.cta{background:var(--red);color:#fff;padding:12px 22px}
+.menubtn{display:none;background:none;border:2px solid #ece4cc;color:#ece4cc;font-family:var(--mono);font-weight:700;font-size:16px;padding:10px 14px;min-height:44px}
+.hero-in{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1fr) 540px;gap:32px;padding-top:84px;padding-bottom:40px}
+.kick{display:flex;align-items:center;gap:14px;font-family:var(--label);font-size:16px;letter-spacing:4px;color:var(--khaki)}
+.kick:before{content:"";width:48px;height:2px;background:var(--khaki)}
+.hero h1{font-size:clamp(44px,6.3vw,92px);line-height:.94;margin:26px 0}
+.hero h1 em{font-style:normal;color:var(--red-l)}
+.hero p.lead{font-size:clamp(19px,1.8vw,25px);line-height:1.45;color:#e6dcc0;max-width:620px;margin:0}
+.hero .btns{display:flex;flex-wrap:wrap;gap:16px;margin:30px 0 20px}
+.ticks{display:flex;flex-wrap:wrap;gap:10px 28px;font-family:var(--mono);font-size:16px;color:var(--khaki);margin:0;padding:0;list-style:none}
+.phones{position:relative;min-height:640px}
+.ph{position:absolute;display:flex;flex-direction:column;align-items:center;gap:14px}
+.ph img{width:210px;height:454px;object-fit:cover;border:9px solid #111;border-radius:32px;box-shadow:0 30px 60px rgba(0,0,0,.55),0 0 0 2px #3a3a30}
+.ph span{background:#ece4cc;color:var(--ink);font-family:var(--mono);font-weight:700;font-size:14px;letter-spacing:2px;padding:6px 12px}
+.ph.a{left:0;top:90px;transform:rotate(-8deg)}.ph.c{right:0;top:110px;transform:rotate(7deg)}
+.ph.b{left:50%;top:10px;margin-left:-120px;z-index:2}.ph.b img{width:240px;height:519px;border-radius:36px}.ph.b span{background:var(--red);color:#fff}
+.why{position:relative;z-index:2;display:flex;justify-content:space-between;align-items:center;gap:30px;padding:10px 0 40px}
+.why small{max-width:720px}
+.why small{font-family:var(--label);font-size:14px;letter-spacing:3px;color:#b8ad8a}
+.stamp{transform:rotate(-4deg);border:3px solid var(--red-l);color:var(--red-l);padding:8px 16px;font-family:var(--disp);font-weight:700;font-size:20px;letter-spacing:3px;white-space:nowrap}
+
+/* STATS */
+.stats{background:var(--red);color:#fff4ea}
+.stats ul{list-style:none;margin:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:24px;padding-top:40px;padding-bottom:40px}
+.stats b{display:block;font-family:var(--disp);font-size:54px;line-height:1}
+.stats span{font-family:var(--mono);font-size:16px}
+
+/* FEATURES */
+.features{padding:104px 0 96px;background-image:repeating-linear-gradient(0deg,rgba(31,29,23,.035) 0 1px,transparent 1px 34px)}
+.sec-h{text-align:center;display:flex;flex-direction:column;align-items:center;gap:14px;margin-bottom:56px}
+.sec-h h2{font-size:clamp(44px,5vw,72px)}.sec-h h2 em{font-style:normal;color:var(--red)}
+.sec-h p{margin:0;font-size:20px;color:var(--muted);max-width:760px}
+.fgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
+.fcard{background:#fffdf6;box-shadow:0 18px 40px rgba(31,29,23,.22);display:flex;flex-direction:column}
+.fimg{height:220px;position:relative;overflow:hidden}
+.fimg .n{position:absolute;left:20px;top:18px;font-family:var(--disp);font-weight:700;font-size:64px;line-height:1;color:rgba(236,228,204,.35)}
+.fimg .shot{position:absolute;left:50%;top:30px;width:200px;margin-left:-100px;border:7px solid #111;border-radius:26px}
+.f1{background:var(--olive)}.f1 .shot{transform:rotate(-4deg)}
+.f2{background:var(--scw)}.f2 .shot{transform:rotate(3deg)}
+.f3{background:#e6dcc0;display:flex;justify-content:center}.f3 .n{color:rgba(31,29,23,.25)}
+.diary{width:250px;height:250px;margin-top:70px;background:#fffdf6;box-shadow:0 10px 24px rgba(0,0,0,.25);transform:rotate(-3deg);padding:22px;display:flex;flex-direction:column;gap:8px}
+.diary small{font-family:var(--label);font-size:11px;letter-spacing:2px;color:var(--red-t)}
+.diary b{font-family:var(--disp);font-size:20px}
+.diary i{font-family:var(--mono);font-style:normal;font-size:12px;color:var(--muted);line-height:1.5}
+.diary em{margin-top:6px;align-self:flex-end;border:2px solid var(--red);color:var(--red);font-family:var(--disp);font-style:normal;font-size:13px;padding:2px 8px;transform:rotate(-6deg)}
+.fbody{padding:30px;display:flex;flex-direction:column;gap:14px}
+.fbody small{font-family:var(--label);font-size:13px;letter-spacing:3px;color:var(--red-t)}
+.fbody h3{font-size:34px}
+.fbody ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:10px;font-size:17px;line-height:1.45;color:var(--ink2)}
+.sure{text-align:center;margin:44px 0 0;font-size:17px;color:var(--muted)}
+.pill{display:inline-block;font-family:var(--mono);font-weight:700;color:#fff;padding:1px 8px}
+.pill.h{background:#2e7d32}.pill.m{background:#9a5b00}.pill.l{background:var(--red-t)}
+
+/* STORY BAND */
+.band{position:relative;overflow:hidden;color:var(--scw-t);min-height:420px;display:flex;align-items:center}
+.band img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.band .shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(38,26,18,.94) 0%,rgba(38,26,18,.80) 45%,rgba(38,26,18,.15) 100%)}
+.band .wrap{position:relative;width:100%;padding-top:60px;padding-bottom:60px}
+.band .in{max-width:820px;display:flex;flex-direction:column;gap:20px;align-items:flex-start}
+.band .eyebrow{color:var(--scw-k)}
+.band h2{font-size:clamp(42px,5vw,64px)}
+.band p{margin:0;font-size:21px;color:#eadbb8}
+.band .btn{background:var(--scw-t);color:var(--scw)}
+
+/* GUIDES */
+.guides{padding:96px 0 90px}
+.gh{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:30px}
+.gh h2{font-size:clamp(44px,5vw,72px);margin-top:12px}
+.gh span{font-family:var(--mono);font-size:16px;color:var(--muted);max-width:360px;text-align:right}
+.guide{display:grid;grid-template-columns:480px minmax(0,1fr) 290px;margin-bottom:30px;position:relative;box-shadow:0 18px 40px rgba(31,29,23,.28)}
+.guide .cover{width:100%;height:100%;min-height:270px;object-fit:cover}
+.guide .txt{padding:34px 40px;display:flex;flex-direction:column;gap:12px}
+.guide .txt small{font-family:var(--label);font-size:14px;letter-spacing:3px}
+.guide h3{font-size:42px}
+.guide p{margin:0;font-size:18px}
+.guide .act{padding:30px;display:flex;flex-direction:column;gap:12px;justify-content:center}
+.guide .act a{font-family:var(--mono);font-weight:700;font-size:16px;text-decoration:none;text-align:center;padding:13px;min-height:44px}
+.guide .act a.sm{font-weight:400;font-size:15px;text-decoration:underline;padding:6px}
+.guide .tag{position:absolute;left:24px;top:22px;background:var(--red);color:#fff;font-family:var(--mono);font-weight:700;font-size:13px;letter-spacing:2px;padding:6px 10px}
+.g-ec{background:var(--olive);color:#ece4cc}.g-ec small{color:var(--khaki)}.g-ec p{color:#ddd4b8}.g-ec .act{border-left:1px solid var(--olive-l)}
+.g-ec .act a{background:#ece4cc;color:#1f2212}.g-ec .act a.sm{background:none;color:#ece4cc}
+.g-scw{background:var(--scw);color:var(--scw-t)}.g-scw small{color:var(--scw-k)}.g-scw p{color:#e4d6b4}.g-scw .act{border-left:1px solid #5a4331}
+.g-scw .act a{background:var(--scw-t);color:var(--scw)}.g-scw .act a.sm{background:none;color:var(--scw-t)}
+.g-ie{background:var(--ie);color:var(--ie-t)}.g-ie small{color:var(--ie-k)}.g-ie p{color:#dcd6bf}.g-ie .act{border-left:1px solid #3d5a45}
+.g-ie .act a{background:var(--ie-t);color:var(--ie)}.g-ie .act a.sm{background:none;color:var(--ie-t)}
+.dl.ie{background:var(--ie);color:var(--ie-t);border-color:var(--ie)}.dl.ie small{color:var(--ie-k)}.dl.ie p{color:#dcd6bf}.dl.ie .meta em{color:var(--ie-k)}
+.g-ww1{background:var(--paper2);border:2px dashed #8e866b;box-shadow:none;color:var(--ink)}
+.g-ww1 .cover{background:var(--ww1);display:flex;align-items:center;justify-content:center;min-height:190px}
+.g-ww1 .cover span{font-family:var(--disp);font-weight:700;font-size:24px;letter-spacing:3px;color:#dbe6eb;border:3px solid #dbe6eb;padding:10px 18px;transform:rotate(-5deg)}
+.g-ww1 small{color:var(--ww1)}.g-ww1 h3{font-size:34px}.g-ww1 p{color:var(--muted);font-size:17px}
+.g-ww1 .act{border-left:1px dashed #8e866b}.g-ww1 .act span{border:2px solid var(--ww1);color:var(--ww1);font-family:var(--mono);font-weight:700;font-size:16px;padding:12px;text-align:center}
+
+/* DOWNLOADS */
+.dls{background:var(--paper2);padding:90px 0}
+.dls .gh{margin-bottom:28px}
+.dlgrid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:18px}
+.dl{background:#fffdf6;border:1px solid #cfc6a8;padding:22px;display:flex;flex-direction:column;gap:8px;text-decoration:none;color:var(--ink);min-height:200px}
+.dl:hover{border-color:var(--ink)}
+.dl small{font-family:var(--label);font-size:12px;letter-spacing:2px;color:var(--red-t)}
+.dl b{font-family:var(--disp);font-size:24px;line-height:1.05}
+.dl p{margin:0;font-size:15px;color:var(--muted)}
+.dl .meta{margin-top:auto;display:flex;justify-content:space-between;font-family:var(--mono);font-size:14px}
+.dl .meta em{font-style:normal;font-weight:700;color:var(--red-t)}
+.dl.scw{background:var(--scw);color:var(--scw-t);border-color:var(--scw)}.dl.scw small{color:var(--scw-k)}.dl.scw p{color:#e4d6b4}.dl.scw .meta em{color:var(--scw-k)}
+.install{margin-top:40px;background:var(--olive);color:#ece4cc;padding:32px 36px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:32px;align-items:center}
+.install b{font-family:var(--disp);font-size:30px;display:block;line-height:1.05}
+.install span{font-size:16px;color:#ddd4b8}
+.install ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.install li{display:flex;gap:12px;align-items:flex-start;font-size:16px}
+.install li i{flex:none;width:34px;height:34px;border:2px solid var(--khaki);color:var(--khaki);font-style:normal;font-family:var(--disp);font-size:18px;display:flex;align-items:center;justify-content:center}
+
+/* FOOTER */
+footer{background:var(--night);color:#c9bf9f}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:30px;padding-top:60px;padding-bottom:60px}
+footer b{display:block;font-family:var(--disp);font-size:32px;letter-spacing:4px;color:#ece4cc;margin-bottom:10px}
+footer p{margin:0;max-width:640px;font-size:17px}
+footer nav{display:flex;flex-direction:column;gap:6px;font-family:var(--mono);font-size:14px;text-align:right}
+footer nav a{color:#ece4cc}
+
+/* SMALLER SCREENS */
+@media (max-width:1180px){
+ .hero-in{grid-template-columns:minmax(0,1fr)}.hero .top{background:linear-gradient(180deg,rgba(24,26,13,.95) 0,rgba(24,26,13,.6) 30%,rgba(24,26,13,.6) 100%)}
+ .phones{min-height:560px;max-width:620px;width:100%;margin:0 auto}
+ .guide{grid-template-columns:360px minmax(0,1fr) 240px}
+ .dlgrid{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .fgrid{gap:22px}
+}
+@media (max-width:900px){
+ .menu{display:none;position:absolute;right:0;top:80px;flex-direction:column;align-items:stretch;gap:0;background:var(--night);border:1px solid #4a5030;min-width:240px}
+ .menu.open{display:flex}.menu a{padding:16px 20px;border-bottom:1px solid #2f3419}
+ .menubtn{display:block}
+ .fgrid{grid-template-columns:minmax(0,1fr)}
+ .stats ul{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .guide{grid-template-columns:minmax(0,1fr)}
+ .guide .cover{min-height:220px;max-height:260px}
+ .guide .act{border-left:0!important;padding-top:0;flex-direction:row;flex-wrap:wrap}
+ .guide .act a{flex:1 1 200px}
+ .gh{flex-direction:column;align-items:flex-start}.gh span{text-align:left}
+ .install{grid-template-columns:minmax(0,1fr)}.install ol{grid-template-columns:minmax(0,1fr)}
+ .why{flex-direction:column;align-items:flex-start;padding-bottom:30px}
+ .hero-in{padding-bottom:30px}
+}
+@media (max-width:620px){
+ body{font-size:17px}
+ .hero h1{font-size:12.2vw}
+ .brand small{display:none}
+ .phones{min-height:430px}
+ .ph img{width:150px;height:324px;border-width:7px;border-radius:24px}
+ .ph.b img{width:170px;height:368px;border-radius:26px}.ph.b{margin-left:-85px}
+ .ph span{font-size:11px;padding:4px 8px}
+ .stats ul{grid-template-columns:repeat(2,minmax(0,1fr))}.stats b{font-size:42px}
+ .dlgrid{grid-template-columns:minmax(0,1fr)}.dl{min-height:0}
+ .guide h3{font-size:34px}.guide .txt{padding:26px 22px}.guide .act{padding:0 22px 26px}
+ .fbody{padding:24px}
+ footer .wrap{flex-direction:column;align-items:flex-start}footer nav{text-align:left}
+ .stamp{font-size:16px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.allsites{font-family:var(--mono);font-size:17px;margin:22px 0 0}.allsites a{font-weight:700}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <img class="bg" src="welcome-wide.jpg" alt="">
+  <div class="shade"></div><div class="top"></div><div class="grid"></div>
+  <div class="wrap" style="position:relative;max-width:1440px">
+    <div class="nav">
+      <a class="brand" href="./" aria-label="DZ Charlie field guides, home"><span class="dz">DZ</span><span><b>DZ CHARLIE</b><small>FIELD GUIDES · FREE</small></span></a>
+      <button class="menubtn" id="menubtn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+      <nav class="menu" id="menu" aria-label="Main">
+        <a href="#how">How it works</a>
+        <a href="#guides">The guides</a>
+        <a href="#downloads">Downloads</a>
+        <a class="cta" href="#guides">Pick your battlefield</a>
+      </nav>
+    </div>
+    <div class="hero-in">
+      <div>
+        <div class="kick">FREE BATTLEFIELD GUIDES FOR YOUR PHONE</div>
+        <h1 tabindex="-1">EVERY<br>BATTLEFIELD<br>HAS A <em>STORY.</em></h1>
+        <p class="lead">Free guides that turn a road trip into a journey through history, with the route, the maps and the stories built in.</p>
+        <div class="btns"><a class="btn red" href="#guides">Pick your battlefield →</a><a class="btn line" href="#how">See how it works</a></div>
+        <ul class="ticks"><li>✓ Free</li><li>✓ No sign-up</li><li>✓ No app store</li><li>✓ Works offline</li></ul>
+      </div>
+      <div class="phones" aria-hidden="true">
+        <div class="ph a"><img src="site/tour.jpg" alt=""><span>01 · PLAN</span></div>
+        <div class="ph c"><img src="site/map.jpg" alt=""><span>03 · FIND THE SPOT</span></div>
+        <div class="ph b"><img src="site/home-normandy.jpg" alt=""><span>02 · HEAR THE STORY</span></div>
+      </div>
+    </div>
+    <div class="why"><small>WHY “DZ CHARLIE”? DROP ZONE C, NORMANDY, THE NIGHT OF 5–6 JUNE 1944. WHERE OUR FIRST GUIDE BEGINS.</small><span class="stamp">3 GUIDES LIVE · MORE INBOUND</span></div>
+  </div>
+</header>
+
+<section class="stats grid" aria-label="The collection in numbers">
+  <ul class="wrap">
+    <li><b>344</b><span>places to stand</span></li>
+    <li><b>7</b><span>countries on the map</span></li>
+    <li><b>2</b><span>wars, and counting</span></li>
+    <li><b>0</b><span>bars of signal needed</span></li>
+    <li><b>€0</b><span>free, every guide</span></li>
+  </ul>
+</section>
+
+<main>
+<section class="features" id="how">
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="eyebrow">YOUR MISSION, IN THREE PHASES</span>
+      <h2>YOUR FIELD GUIDE <em>TO HISTORY</em></h2>
+      <p>Every DZ Charlie guide works the same way, whichever war you choose.</p>
+    </div>
+    <div class="fgrid">
+      <article class="fcard">
+        <div class="fimg f1"><img class="shot" src="site/tour.jpg" alt="The tour planner in a guide"><span class="n" aria-hidden="true">01</span></div>
+        <div class="fbody"><small>BEFORE YOU GO</small><h3>PLOT YOUR ROUTE</h3>
+          <ul><li>Got 2 hours or 2 weeks? Pick your area and the guide builds the tour</li><li>Or build your own route, day by day</li><li>Read the briefing: the whole war in a few pages</li><li>Save it for offline, print the PDF</li></ul></div>
+      </article>
+      <article class="fcard">
+        <div class="fimg f2"><img class="shot" src="site/map.jpg" alt="The map in a guide"><span class="n" aria-hidden="true">02</span></div>
+        <div class="fbody"><small>ON THE GROUND</small><h3>FIND THE EXACT SPOT</h3>
+          <ul><li>“Where am I?” shows the nearest site and how far</li><li>Road maps down to village level, no signal needed</li><li>The story of every stop, and what you still see today</li><li>Battle maps, the people and the weapons they carried</li></ul></div>
+      </article>
+      <article class="fcard">
+        <div class="fimg f3"><div class="diary" aria-label="An example diary page"><small>AFTER ACTION REPORT · DAY 2</small><b>CARENTAN</b><i>“Stood at the crossroads where they came in at dawn. Quieter than I imagined.”</i><em>VISITED</em></div><span class="n" aria-hidden="true">03</span></div>
+        <div class="fbody"><small>AFTER THE DAY</small><h3>KEEP THE STORY</h3>
+          <ul><li>Your trip diary: the day's places, in the order it happened</li><li>Add your own notes to every stop</li><li>Send the page to family, or print a trip booklet</li><li>No account. It all stays on your phone</li></ul></div>
+      </article>
+    </div>
+    <p class="sure">Every place is marked <span class="pill h">HIGH</span> <span class="pill m">MEDIUM</span> or <span class="pill l">LOW</span> for how sure we are of the exact spot.</p>
+  </div>
+</section>
+
+<section class="band" aria-label="The Spanish Civil War guide">
+  <img src="site/scw-wide.jpg" alt="The ruins of old Belchite, Aragon">
+  <div class="shade"></div>
+  <div class="wrap"><div class="in">
+    <span class="eyebrow">NEW GUIDE · SPAIN 1936–1939 · ENGLISH &amp; <span lang="es">ESPAÑOL</span></span>
+    <h2>A WHOLE COUNTRY.<br>ONE GUIDE.</h2>
+    <p>From the ruins of Belchite to the shelters of Madrid: 158 sites across Spain, and a tour built around your time.</p>
+    <a class="btn" href="spanish-civil-war/">Open the Spanish Civil War guide →</a>
+    <p style="margin-top:12px"><a href="spanish-civil-war/es.html" lang="es" style="color:#f0c46b">Abrir la guía en español →</a></p>
+  </div></div>
+</section>
+
+<section class="guides" id="guides">
+  <div class="wrap">
+    <div class="gh"><div><span class="eyebrow">THE COLLECTION</span><h2>PICK YOUR BATTLEFIELD</h2></div><span>Each guide stands alone, with a look drawn from its own war.</span></div>
+
+    <article class="guide g-ec">
+      <img class="cover" src="welcome-wide.jpg" alt="Easy Company guide cover">
+      <div class="txt"><small>WORLD WAR II · 1944–1945 · 5 COUNTRIES</small><h3>EASY COMPANY</h3>
+        <p>Jump with the 506th into Normandy, hold the line at Bastogne, finish at the Eagle's Nest. 90 stops, 146 spoken stories.</p></div>
+      <div class="act">
+        <a href="normandy.html">1 · Normandy →</a>
+        <a href="holland-bastogne.html">2 · Holland &amp; Bastogne →</a>
+        <a href="germany-austria.html">3 · Germany &amp; Austria →</a>
+        <a class="sm" href="#downloads">Download the PDFs</a>
+      </div>
+      <span class="tag">3 CAMPAIGNS</span>
+    </article>
+
+    <article class="guide g-scw">
+      <img class="cover" src="site/scw-wide.jpg" alt="Spanish Civil War guide cover">
+      <div class="txt"><small>SPAIN · 1936–1939 · 8 AREAS</small><h3>THE SPANISH CIVIL WAR</h3>
+        <p>Trenches, ruined villages, air-raid shelters and memorials. Tell it your time; it builds the tour. 158 sites, 6 battle maps.</p></div>
+      <div class="act">
+        <a href="spanish-civil-war/">Open the guide →</a>
+        <a href="spanish-civil-war/es.html" lang="es">Abrir en español →</a>
+        <a class="sm" href="spanish-civil-war/pdf/The-Spanish-Civil-War-field-guide.pdf" download>Download the PDF</a>
+      </div>
+      <span class="tag">NEW</span>
+      <span class="tag" style="left:auto;right:24px;background:#f0c46b;color:#1d140c">EN · <span lang="es">ESPAÑOL</span></span>
+    </article>
+
+    <article class="guide g-ie">
+      <img class="cover" src="site/ie-wide.jpg" alt="Into Europe guide cover: Allied soldiers climbing an Italian hillside">
+      <div class="txt"><small>WORLD WAR II · ITALY · 1943–1945</small><h3>INTO EUROPE</h3>
+        <p>The Allied advance through Italy, from the Sicily beaches to the Po: Salerno, Cassino, Anzio, Rome and the Gothic Line. 96 stops over 14 days, 8 battle maps.</p></div>
+      <div class="act">
+        <a href="into-europe/">Open the guide →</a>
+        <a class="sm" href="into-europe/pdf/Into-Europe-Italy-1943-1945.pdf" download>Download the PDF</a>
+      </div>
+      <span class="tag">NEW</span>
+    </article>
+
+    <article class="guide g-ww1">
+      <div class="cover grid"><span>NEXT ON THE MAP</span></div>
+      <div class="txt"><small>WORLD WAR I · 1914–1918 · BELGIUM</small><h3>THE GREAT WAR IN BELGIUM</h3>
+        <p>Into the trenches of Flanders: 55+ sites and 9 battle maps. First edition in Spanish.</p></div>
+      <div class="act"><span>Coming soon</span></div>
+    </article>
+  </div>
+  <p class="wrap allsites"><a href="places/">Browse all 372 sites in the guides, with stories, visiting info and directions →</a></p>
+<p class="wrap allsites"><a href="visit/">Trip ideas: Band of Brothers sites, D-Day, Bastogne, Monte Cassino, Sicily and the Spanish Civil War →</a></p>
+
+</section>
+
+<section class="dls" id="downloads">
+  <div class="wrap">
+    <div class="gh"><div><span class="eyebrow">TAKE IT WITH YOU</span><h2>DOWNLOADS</h2></div><span>Every guide as a printable PDF, to read on the plane or print for the car.</span></div>
+    <div class="dlgrid">
+      <a class="dl" href="pdf/Easy-Company-Normandy.pdf" download><small>EASY COMPANY · 1</small><b>Normandy</b><p>The night drop, Brécourt Manor, Carentan and the whole invasion.</p><span class="meta"><span>37 pages · 3.5 MB</span><em>⬇ PDF</em></span></a>
+      <a class="dl" href="pdf/Easy-Company-Holland-Bastogne.pdf" download><small>EASY COMPANY · 2</small><b>Holland &amp; Bastogne</b><p>Market Garden, the Island, the frozen woods and Haguenau.</p><span class="meta"><span>38 pages · 4.2 MB</span><em>⬇ PDF</em></span></a>
+      <a class="dl" href="pdf/Easy-Company-Germany-Austria.pdf" download><small>EASY COMPANY · 3</small><b>Germany &amp; Austria</b><p>The Rhine, Landsberg, the Eagle's Nest and the end of the war.</p><span class="meta"><span>32 pages · 3.5 MB</span><em>⬇ PDF</em></span></a>
+      <a class="dl" href="pdf/Easy-Company-Common-Reference.pdf" download><small>EASY COMPANY · ALL</small><b>Common Reference</b><p>Origins, the men, the weapons, words to know.</p><span class="meta"><span>46 pages · 4.3 MB</span><em>⬇ PDF</em></span></a>
+      <a class="dl scw" href="spanish-civil-war/pdf/The-Spanish-Civil-War-field-guide.pdf" download><small>SPAIN · 1936–1939</small><b>The Spanish Civil War</b><p>All 158 sites in 8 areas, with maps, people and timeline.</p><span class="meta"><span>73 pages · 2.3 MB</span><em>⬇ PDF</em></span></a>
+      <a class="dl ie" href="into-europe/pdf/Into-Europe-Italy-1943-1945.pdf" download><small>ITALY · 1943–1945</small><b>Into Europe</b><p>The 14-day drive from Sicily to the Po, with maps, key figures, the armies and the timeline.</p><span class="meta"><span>81 pages · 4.0 MB</span><em>⬇ PDF</em></span></a>
+    </div>
+    <div class="install">
+      <div><b>PUT A GUIDE ON YOUR PHONE</b><span>No app store needed. It opens like an app and works in the fields with no signal.</span></div>
+      <ol>
+        <li><i>1</i><p style="margin:0"><b style="font-family:inherit;font-size:inherit;display:inline">Open this website</b> on your phone in Safari or Chrome.</p></li>
+        <li><i>2</i><p style="margin:0">Tap <b style="font-family:inherit;font-size:inherit;display:inline">Share</b>, then <b style="font-family:inherit;font-size:inherit;display:inline">Add to Home Screen</b>.</p></li>
+        <li><i>3</i><p style="margin:0">On Wi-Fi, open a guide and tap <b style="font-family:inherit;font-size:inherit;display:inline">More › Save for offline</b>.</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="grid">
+  <div class="wrap">
+    <div><b>REMEMBER · EXPLORE · RESPECT</b><p>Many fields are private: view them from the road. Cemeteries and memorials are places of remembrance first.</p></div>
+    <nav aria-label="Guides">
+      <a href="normandy.html">Normandy</a><a href="holland-bastogne.html">Holland &amp; Bastogne</a><a href="germany-austria.html">Germany &amp; Austria</a><a href="spanish-civil-war/">The Spanish Civil War</a><a href="into-europe/">Into Europe · Italy</a><a href="places/">All 372 sites</a><a href="visit/">Trip ideas</a>
+      <span>DZ Charlie · field guides made with care by JC</span><span>Maps © OpenStreetMap contributors · Manual drawings: US War Department (public domain)</span>
+    </nav>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var b=document.getElementById("menubtn"),m=document.getElementById("menu");
+  b.addEventListener("click",function(){var o=m.classList.toggle("open");b.setAttribute("aria-expanded",o?"true":"false")});
+  m.addEventListener("click",function(e){if(e.target.tagName==="A"){m.classList.remove("open");b.setAttribute("aria-expanded","false")}});
+  document.addEventListener("keydown",function(e){if(e.key==="Escape"&&m.classList.contains("open")){m.classList.remove("open");b.setAttribute("aria-expanded","false");b.focus()}});
+  if("serviceWorker" in navigator&&/^https?:$/.test(location.protocol)){navigator.serviceWorker.register("sw.js").catch(function(){})}
+})();
+</script>
+<script>/* DZ Charlie visitor counter: counts real visits, app installs and PDF downloads. No cookies, nothing personal is stored. Add ?me=1 to any address to stop counting your own visits on that device. */
+(function(){try{var q=location.search,s=window.localStorage;if(/[?&]me=1/.test(q))s.setItem('dz_me','1');if(/[?&]me=0/.test(q))s.removeItem('dz_me');if(s.getItem('dz_me'))return}catch(e){}
+if(navigator.webdriver||!/(^|\.)dzcharlie\.com$|\.netlify\.app$/.test(location.hostname))return;
+var p=location.pathname,u=navigator.userAgent,w=Math.min(screen.width,screen.height),d=/Mobi|Android|iPhone/i.test(u)?(w>=600?'tablet':'phone'):(/Macintosh/.test(u)&&navigator.maxTouchPoints>1?'tablet':'computer');
+var app=false;try{app=navigator.standalone===true||['standalone','fullscreen','minimal-ui'].some(function(m){return matchMedia('(display-mode: '+m+')').matches})}catch(e){}
+var dv=d+(app?'-app':''),B='https://yltrecaajqaioduovlio.supabase.co/rest/v1/rpc/',H={'apikey':'sb_publishable_m7a_N2Q1OHS0zqcu4QDHXg_2iA6ZIBd','Content-Type':'application/json'};
+function send(f,o){try{fetch(B+f,{method:'POST',keepalive:true,headers:H,body:JSON.stringify(o)}).catch(function(){})}catch(e){}}
+send('record_visit',{p_path:p,p_ref:document.referrer||null,p_device:dv});
+/* someone added the guide to their home screen (Android and computers report this; iPhones do not) */
+addEventListener('appinstalled',function(){send('record_event',{p_kind:'install',p_path:p,p_device:d})});
+/* someone tapped one of the guide's own PDFs */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e.target.closest('a[href]'):null;if(!a)return;var x;try{x=new URL(a.getAttribute('href'),location.href)}catch(r){return}
+if(x.origin===location.origin&&/\/pdf\/.*\.pdf$/i.test(x.pathname))send('record_event',{p_kind:'pdf',p_path:x.pathname,p_file:x.pathname,p_device:dv})},true);
+})();
+</script>
+</body>
+</html>
