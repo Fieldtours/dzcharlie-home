@@ -218,6 +218,17 @@ footer nav a{color:#ece4cc}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 .allsites{font-family:var(--mono);font-size:17px;margin:22px 0 0}.allsites a{font-weight:700}
+/* Spanish Civil War card: "¡Ahora en español!" stamp and Spanish button (14 Oct 2026) */
+.scw-pic{position:relative;min-height:270px;overflow:hidden}
+.scw-pic .cover{position:absolute;inset:0}
+.es-stamp{position:absolute;right:31px;top:40px;transform:rotate(-8deg);display:flex;flex-direction:column;align-items:center;gap:2px;padding:12px 18px;background:var(--red);color:#fff;text-decoration:none;border:3px double #fff;outline:3px solid var(--red);box-shadow:0 8px 18px rgba(0,0,0,.45);transition:transform .15s}
+.es-stamp b{font-family:var(--disp);font-weight:700;font-size:26px;line-height:1;letter-spacing:1px}
+.es-stamp small{font-family:var(--mono);font-weight:700;font-size:12px;letter-spacing:2px;margin-top:4px;color:#fff}
+.es-stamp:hover,.es-stamp:focus-visible{transform:rotate(-8deg) scale(1.06);color:#fff}
+.g-scw .act a.es-btn{background:var(--red);color:#fff;border:2px solid var(--red-l);font-size:17px;padding:15px 13px}
+.g-scw .act a.es-btn:hover{background:var(--red-t)}
+@media (max-width:900px){.scw-pic{min-height:240px}.es-stamp{top:22px;right:20px}.es-stamp b{font-size:22px}}
+@media (prefers-reduced-motion:reduce){.es-stamp{transition:none}}
 </style>
 </head>
 <body>
@@ -323,16 +334,18 @@ footer nav a{color:#ece4cc}
     </article>
 
     <article class="guide g-scw">
-      <img class="cover" src="site/scw-wide.jpg" alt="Spanish Civil War guide cover">
+      <div class="scw-pic">
+        <img class="cover" src="site/scw-wide.jpg" alt="Spanish Civil War guide cover">
+        <a class="es-stamp" href="spanish-civil-war/es.html" lang="es" aria-label="¡Ahora en español! Abrir la guía en español"><b>¡AHORA EN</b><b>ESPAÑOL!</b><small>ABRIR LA GUÍA →</small></a>
+      </div>
       <div class="txt"><small>SPAIN · 1936–1939 · 8 AREAS</small><h3>THE SPANISH CIVIL WAR</h3>
         <p>Trenches, ruined villages, air-raid shelters and memorials. Tell it your time; it builds the tour. 158 sites, 6 battle maps.</p></div>
       <div class="act">
         <a href="spanish-civil-war/">Open the guide →</a>
-        <a href="spanish-civil-war/es.html" lang="es">Abrir en español →</a>
+        <a class="es-btn" href="spanish-civil-war/es.html" lang="es">Abrir en español →</a>
         <a class="sm" href="spanish-civil-war/pdf/The-Spanish-Civil-War-field-guide.pdf" download>Download the PDF</a>
       </div>
       <span class="tag">NEW</span>
-      <span class="tag" style="left:auto;right:24px;background:#f0c46b;color:#1d140c">EN · <span lang="es">ESPAÑOL</span></span>
     </article>
 
     <article class="guide g-ie">
