@@ -30,7 +30,7 @@
 @font-face{font-family:"Courier Prime";font-weight:400;font-display:swap;src:url(fonts/courier-prime-400.woff2) format("woff2")}
 @font-face{font-family:"Courier Prime";font-weight:700;font-display:swap;src:url(fonts/courier-prime-700.woff2) format("woff2")}
 :root{--night:#181a0d;--olive:#2f3419;--olive-l:#4a5030;--paper:#f4efe1;--paper2:#e6e0cc;--ink:#1f1d17;--ink2:#3a3629;--muted:#4a4536;--khaki:#d8c98f;--red:#a3261e;--red-l:#e8573f;--red-t:#8f2119;
- --scw:#3d2b1f;--scw-t:#f1e6c9;--scw-k:#e0b86a;--ww1:#3f5561;--ie:#22392b;--ie-t:#f2ecd9;--ie-k:#e4b65c;
+ --scw:#3d2b1f;--scw-t:#f1e6c9;--scw-k:#e0b86a;--ww1:#3f5561;--ie:#22392b;--ie-t:#f2ecd9;--ie-k:#e4b65c;--uw:#24323f;--uw-t:#efe9da;--uw-k:#e0877d;
  --disp:"Stardos Stencil",Impact,"Arial Narrow",sans-serif;--label:"Special Elite","Courier New",monospace;--mono:"Courier Prime","Courier New",monospace;--body:Georgia,"Times New Roman",serif}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -142,6 +142,9 @@ h1,h2,h3{font-family:var(--disp);font-weight:700;margin:0;line-height:1;letter-s
 .g-ec .act a{background:#ece4cc;color:#1f2212}.g-ec .act a.sm{background:none;color:#ece4cc}
 .g-scw{background:var(--scw);color:var(--scw-t)}.g-scw small{color:var(--scw-k)}.g-scw p{color:#e4d6b4}.g-scw .act{border-left:1px solid #5a4331}
 .g-scw .act a{background:var(--scw-t);color:var(--scw)}.g-scw .act a.sm{background:none;color:var(--scw-t)}
+.g-uw h3{font-size:min(36px,9vw)}.g-uw{background:var(--uw);color:var(--uw-t)}.g-uw small{color:var(--uw-k)}.g-uw p{color:#d6d9dc}.g-uw .act{border-left:1px solid #3e4a57}
+.g-uw .act a{background:var(--uw-t);color:var(--uw)}.g-uw .act a.sm{background:none;color:var(--uw-t)}
+.dl.uw{background:var(--uw);color:var(--uw-t);border-color:var(--uw)}.dl.uw small{color:var(--uw-k)}.dl.uw p{color:#d6d9dc}.dl.uw .meta em{color:var(--uw-k)}
 .g-ie{background:var(--ie);color:var(--ie-t)}.g-ie small{color:var(--ie-k)}.g-ie p{color:#dcd6bf}.g-ie .act{border-left:1px solid #3d5a45}
 .g-ie .act a{background:var(--ie-t);color:var(--ie)}.g-ie .act a.sm{background:none;color:var(--ie-t)}
 .dl.ie{background:var(--ie);color:var(--ie-t);border-color:var(--ie)}.dl.ie small{color:var(--ie-k)}.dl.ie p{color:#dcd6bf}.dl.ie .meta em{color:var(--ie-k)}
@@ -348,6 +351,17 @@ footer nav a{color:#ece4cc}
       <span class="tag">NEW</span>
     </article>
 
+    <article class="guide g-uw">
+      <img class="cover" src="site/uw-wide.jpg" alt="Understanding WWII guide cover: an RAF operations room with plotters around a map table">
+      <div class="txt"><small>WORLD WAR II · EUROPE · 1939–1945</small><h3>UNDERSTANDING WWII</h3>
+        <p>The whole war in Europe, from Westerplatte to Berlin: Dunkirk, the Battle of Britain, Normandy, Arnhem, Bastogne, Stalingrad and the camps. 160 sites in 15 areas, 12 battle maps.</p></div>
+      <div class="act">
+        <a href="understanding-wwii/">Open the guide →</a>
+        <a class="sm" href="understanding-wwii/pdf/Understanding-WWII-Europe-1939-1945.pdf" download>Download the PDF</a>
+      </div>
+      <span class="tag">NEW</span>
+    </article>
+
     <article class="guide g-ie">
       <img class="cover" src="site/ie-wide.jpg" alt="Into Europe guide cover: Allied soldiers climbing an Italian hillside">
       <div class="txt"><small>WORLD WAR II · ITALY · 1943–1945</small><h3>INTO EUROPE</h3>
@@ -381,6 +395,7 @@ footer nav a{color:#ece4cc}
       <a class="dl" href="pdf/Easy-Company-Common-Reference.pdf" download><small>EASY COMPANY · ALL</small><b>Common Reference</b><p>Origins, the men, the weapons, words to know.</p><span class="meta"><span>46 pages · 4.3 MB</span><em>⬇ PDF</em></span></a>
       <a class="dl scw" href="spanish-civil-war/pdf/The-Spanish-Civil-War-field-guide.pdf" download><small>SPAIN · 1936–1939</small><b>The Spanish Civil War</b><p>All 158 sites in 8 areas, with maps, people and timeline.</p><span class="meta"><span>73 pages · 2.3 MB</span><em>⬇ PDF</em></span></a>
       <a class="dl ie" href="into-europe/pdf/Into-Europe-Italy-1943-1945.pdf" download><small>ITALY · 1943–1945</small><b>Into Europe</b><p>The 14-day drive from Sicily to the Po, with maps, key figures, the armies and the timeline.</p><span class="meta"><span>81 pages · 4.0 MB</span><em>⬇ PDF</em></span></a>
+      <a class="dl uw" href="understanding-wwii/pdf/Understanding-WWII-Europe-1939-1945.pdf" download><small>EUROPE · 1939–1945</small><b>Understanding WWII</b><p>The whole war in Europe: 160 sites, the timeline, key figures and the battles.</p><span class="meta"><span>177 pages · 5.8 MB</span><em>⬇ PDF</em></span></a>
     </div>
     <div class="install">
       <div><b>PUT A GUIDE ON YOUR PHONE</b><span>No app store needed. It opens like an app and works in the fields with no signal.</span></div>
@@ -398,7 +413,7 @@ footer nav a{color:#ece4cc}
   <div class="wrap">
     <div><b>REMEMBER · EXPLORE · RESPECT</b><p>Many fields are private: view them from the road. Cemeteries and memorials are places of remembrance first.</p></div>
     <nav aria-label="Guides">
-      <a href="normandy.html">Normandy</a><a href="holland-bastogne.html">Holland &amp; Bastogne</a><a href="germany-austria.html">Germany &amp; Austria</a><a href="spanish-civil-war/">The Spanish Civil War</a><a href="into-europe/">Into Europe · Italy</a><a href="places/">All 372 sites</a><a href="visit/">Trip ideas</a>
+      <a href="normandy.html">Normandy</a><a href="holland-bastogne.html">Holland &amp; Bastogne</a><a href="germany-austria.html">Germany &amp; Austria</a><a href="spanish-civil-war/">The Spanish Civil War</a><a href="into-europe/">Into Europe · Italy</a><a href="understanding-wwii/">Understanding WWII</a><a href="places/">All 372 sites</a><a href="visit/">Trip ideas</a>
       <span>DZ Charlie · field guides made with care by JC</span><span>Maps © OpenStreetMap contributors · Manual drawings: US War Department (public domain)</span>
     </nav>
   </div>
