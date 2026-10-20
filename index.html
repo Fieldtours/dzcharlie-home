@@ -233,8 +233,81 @@ footer nav a{color:#ece4cc}
 @media (max-width:900px){.scw-pic{min-height:240px}.es-stamp{top:22px;right:20px}.es-stamp b{font-size:22px}}
 @media (prefers-reduced-motion:reduce){.es-stamp{transition:none}}
 </style>
+<style id="mq-css">
+/* Phones: the guides first (design A). Computers keep the full page. */
+.mq{display:none}
+@media (max-width:700px){
+ .mq{display:block;background:#181a0d;color:#f4efe1;font-family:"Courier Prime","Courier New",monospace}
+ header.hero,section.band,section.guides{display:none!important}
+ .mq a{color:#f4efe1;text-decoration:none}
+ .mq-top{display:flex;align-items:center;justify-content:space-between;padding:10px 16px;border-bottom:1px solid #3a3629;position:relative}
+ .mq-brand{display:flex;align-items:center;gap:10px}
+ .mq-dz{width:36px;height:36px;border:2px solid #d8c98f;border-radius:6px;display:grid;place-items:center;font-family:"Stardos Stencil",Impact,sans-serif;font-weight:700;font-size:16px;color:#d8c98f}
+ .mq-brand b{display:block;font-family:"Stardos Stencil",Impact,sans-serif;font-size:17px;letter-spacing:1px}
+ .mq-brand small{display:block;font-size:11px;letter-spacing:1px;color:#d8c98f}
+ .mq-menu summary{list-style:none;min-height:44px;padding:0 14px;display:grid;place-items:center;border:1.5px solid #d8c98f;border-radius:8px;font-weight:700;cursor:pointer}
+ .mq-menu summary::-webkit-details-marker{display:none}
+ .mq-menu nav{position:absolute;right:16px;top:62px;z-index:50;background:#2f3419;border:1px solid #4a4536;border-radius:10px;padding:6px;display:grid;min-width:220px;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+ .mq-menu nav a{min-height:44px;display:flex;align-items:center;padding:0 12px;border-radius:8px}
+ .mq-menu nav a:active{background:#3a3629}
+ .mq-hi{padding:14px 16px 6px}
+ .mq-hi h1{margin:0;font-family:"Stardos Stencil",Impact,sans-serif;font-size:27px;line-height:1.05;font-weight:700;color:#f4efe1}
+ .mq-hi h1 em{font-style:normal;color:#e0675b}
+ .mq-hi p{margin:6px 0 0;font-size:13px;color:#d8c98f}
+ .mq-k{padding:10px 16px 4px;font-family:"Special Elite",monospace;font-size:12px;letter-spacing:2px;color:#d8c98f}
+ .mq-list{display:flex;flex-direction:column;gap:12px;padding:6px 16px 16px}
+ .mq-card{border-radius:12px;overflow:hidden;border:1px solid #4a4536;background:#2f3419}
+ .mq-pic{position:relative;height:92px;display:block}
+ .mq-pic img{width:100%;height:92px;object-fit:cover;display:block}
+ .mq-pic span{position:absolute;left:0;right:0;bottom:0;padding:6px 12px;background:rgba(24,26,13,.82)}
+ .mq-pic b{font-family:"Stardos Stencil",Impact,sans-serif;font-size:20px}
+ .mq-pic small{font-size:11px;color:#d8c98f}
+ .mq-btns{display:grid;gap:6px;padding:8px;grid-template-columns:repeat(3,minmax(0,1fr))}
+ .mq-btns.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .mq-btns a{min-height:44px;display:grid;place-items:center;text-align:center;border-radius:8px;background:#f4efe1;color:#1f1d17!important;font-weight:700;font-size:13px;line-height:1.1;padding:0 4px}
+ .mq-btns a.es{background:#f0c46b}
+ .mq-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+ .mq-pair a{border-radius:12px;overflow:hidden;border:1px solid #4a4536;display:flex;flex-direction:column}
+ .mq-pair img{width:100%;height:78px;object-fit:cover;display:block}
+ .mq-pair span{padding:8px 10px 10px;display:flex;flex-direction:column;gap:2px}
+ .mq-pair b{font-family:"Stardos Stencil",Impact,sans-serif;font-size:17px;line-height:1.05}
+ .mq-pair small{font-size:11px;color:#d8c98f}
+ .mq-soon{border:1.5px dashed #4a4536;border-radius:12px;padding:10px 14px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+ .mq-soon b{font-family:"Stardos Stencil",Impact,sans-serif;font-size:16px}
+ .mq-soon small{font-size:12px;color:#d8c98f;white-space:nowrap}
+ .mq-links{display:flex;flex-wrap:wrap;gap:8px;padding:0 16px 18px}
+ .mq-links a{min-height:40px;padding:0 12px;display:grid;place-items:center;border-radius:20px;border:1.5px solid #4a4536;font-size:13px}
+}
+</style>
 </head>
 <body>
+<section class="mq" aria-label="DZ Charlie field guides">
+ <div class="mq-top">
+  <a class="mq-brand" href="./" aria-label="DZ Charlie field guides, home"><span class="mq-dz">DZ</span><span><b>DZ CHARLIE</b><small>FIELD GUIDES · FREE</small></span></a>
+  <details class="mq-menu"><summary>Menu</summary><nav aria-label="Menu">
+   <a href="#how">How it works</a><a href="places/">All 372 sites</a><a href="visit/">Trip ideas</a><a href="#downloads">Download the PDFs</a><a href="spanish-civil-war/es.html" lang="es">Guía en español</a>
+  </nav></details>
+ </div>
+ <div class="mq-hi"><h1>EVERY BATTLEFIELD HAS A <em>STORY.</em></h1><p>Free guides for your phone · no sign-up · works offline</p></div>
+ <div class="mq-k">PICK YOUR BATTLEFIELD</div>
+ <div class="mq-list">
+  <div class="mq-card">
+   <a class="mq-pic" href="normandy.html"><img src="welcome-wide.jpg" alt="Easy Company guide cover"><span><b>EASY COMPANY</b> <small>WWII · 1944–45</small></span></a>
+   <div class="mq-btns"><a href="normandy.html">Normandy</a><a href="holland-bastogne.html">Holland &amp; Bastogne</a><a href="germany-austria.html">Germany &amp; Austria</a></div>
+  </div>
+  <div class="mq-card" style="background:#3d2b1f">
+   <a class="mq-pic" href="spanish-civil-war/"><img src="site/scw-wide.jpg" alt="Spanish Civil War guide cover"><span><b>THE SPANISH CIVIL WAR</b> <small>1936–39</small></span></a>
+   <div class="mq-btns two"><a href="spanish-civil-war/">Open the guide</a><a class="es" href="spanish-civil-war/es.html" lang="es">En español</a></div>
+  </div>
+  <div class="mq-pair">
+   <a href="footsteps-of-wwii/" style="background:#24323f"><img src="site/uw-wide.jpg" alt="Footsteps of WWII guide cover"><span><b>FOOTSTEPS OF WWII</b><small>Europe 1939–45 · Open ›</small></span></a>
+   <a href="into-europe/" style="background:#22392b"><img src="site/ie-wide.jpg" alt="Into Europe guide cover"><span><b>INTO EUROPE</b><small>Italy 1943–45 · Open ›</small></span></a>
+  </div>
+  <div class="mq-soon"><span><small style="display:block;letter-spacing:1px">NEXT ON THE MAP</small><b>THE GREAT WAR IN BELGIUM</b></span><small>Coming soon</small></div>
+ </div>
+ <div class="mq-links"><a href="places/">All 372 sites</a><a href="visit/">Trip ideas</a><a href="#downloads">PDFs</a><a href="#how">How it works</a></div>
+</section>
+
 
 <header class="hero">
   <img class="bg" src="welcome-wide.jpg" alt="">
