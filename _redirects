@@ -1,7 +1,7 @@
 # dzcharlie.com shows each guide from its own Netlify site (the address stays dzcharlie.com).
 # Easy Company  -> easyco44.netlify.app     (update it by dragging "Easy Company / UPLOAD THIS TO NETLIFY - Easy Company")
 # Into Europe -> intoeurope.netlify.app     (update it by dragging "Into Europe / UPLOAD THIS TO NETLIFY - Into Europe")
-# Understanding WWII -> understanding-wwii.netlify.app (update it by dragging "Understanding WWII / UPLOAD THIS TO NETLIFY - Understanding WWII")
+# Footsteps of WWII -> understanding-wwii.netlify.app (published from github.com/Fieldtours/understanding-wwii, folder app)
 # Spanish Civil War -> spanishwar.netlify.app (update it by dragging "The Spanish Civil War / UPLOAD THIS TO NETLIFY - The Spanish Civil War")
 /normandy.html            https://easyco44.netlify.app/normandy.html           200
 /normandy                 https://easyco44.netlify.app/normandy.html           200
@@ -15,7 +15,8 @@
 /weapons/*                https://easyco44.netlify.app/weapons/:splat          200
 /spanish-civil-war/*      https://spanishwar.netlify.app/:splat                200
 /into-europe/*            https://intoeurope.netlify.app/:splat                200
-/understanding-wwii/*     https://understanding-wwii.netlify.app/:splat        200
+/footsteps-of-wwii/*      https://understanding-wwii.netlify.app/:splat        200
+/understanding-wwii/*     /footsteps-of-wwii/:splat                            301
 
 # Spanish pages: dzcharlie.com/es goes to the Spanish list of Spanish Civil War sites
 /es                       /es/guerra-civil/     301
