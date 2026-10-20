@@ -234,11 +234,12 @@ footer nav a{color:#ece4cc}
 @media (prefers-reduced-motion:reduce){.es-stamp{transition:none}}
 </style>
 <style id="mq-css">
-/* Phones: the guides first (design A). Computers keep the full page. */
+/* Phones: guides first, with a short explanation and the next section peeking (design A5). Computers keep the full page. */
 .mq{display:none}
 @media (max-width:700px){
- .mq{display:block;background:#181a0d;color:#f4efe1;font-family:"Courier Prime","Courier New",monospace}
- header.hero,section.band,section.guides{display:none!important}
+ .mq{display:flex;flex-direction:column;min-height:100vh;min-height:100svh;box-sizing:border-box;background:#181a0d;color:#f4efe1;font-family:"Courier Prime","Courier New",monospace}
+ header.hero,section.band,section.guides,section.stats{display:none!important}
+ section.features{padding-top:28px!important}
  .mq a{color:#f4efe1;text-decoration:none}
  .mq-top{display:flex;align-items:center;justify-content:space-between;padding:10px 16px;border-bottom:1px solid #3a3629;position:relative}
  .mq-brand{display:flex;align-items:center;gap:10px}
@@ -249,34 +250,29 @@ footer nav a{color:#ece4cc}
  .mq-menu summary::-webkit-details-marker{display:none}
  .mq-menu nav{position:absolute;right:16px;top:62px;z-index:50;background:#2f3419;border:1px solid #4a4536;border-radius:10px;padding:6px;display:grid;min-width:220px;box-shadow:0 10px 30px rgba(0,0,0,.5)}
  .mq-menu nav a{min-height:44px;display:flex;align-items:center;padding:0 12px;border-radius:8px}
- .mq-menu nav a:active{background:#3a3629}
- .mq-hi{padding:14px 16px 6px}
+ .mq-hi{padding:14px 16px 0}
  .mq-hi h1{margin:0;font-family:"Stardos Stencil",Impact,sans-serif;font-size:27px;line-height:1.05;font-weight:700;color:#f4efe1}
  .mq-hi h1 em{font-style:normal;color:#e0675b}
- .mq-hi p{margin:6px 0 0;font-size:13px;color:#d8c98f}
- .mq-k{padding:10px 16px 4px;font-family:"Special Elite",monospace;font-size:12px;letter-spacing:2px;color:#d8c98f}
- .mq-list{display:flex;flex-direction:column;gap:12px;padding:6px 16px 16px}
- .mq-card{border-radius:12px;overflow:hidden;border:1px solid #4a4536;background:#2f3419}
- .mq-pic{position:relative;height:92px;display:block}
- .mq-pic img{width:100%;height:92px;object-fit:cover;display:block}
- .mq-pic span{position:absolute;left:0;right:0;bottom:0;padding:6px 12px;background:rgba(24,26,13,.82)}
- .mq-pic b{font-family:"Stardos Stencil",Impact,sans-serif;font-size:20px}
- .mq-pic small{font-size:11px;color:#d8c98f}
- .mq-btns{display:grid;gap:6px;padding:8px;grid-template-columns:repeat(3,minmax(0,1fr))}
- .mq-btns.two{grid-template-columns:repeat(2,minmax(0,1fr))}
- .mq-btns a{min-height:44px;display:grid;place-items:center;text-align:center;border-radius:8px;background:#f4efe1;color:#1f1d17!important;font-weight:700;font-size:13px;line-height:1.1;padding:0 4px}
- .mq-btns a.es{background:#f0c46b}
- .mq-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
- .mq-pair a{border-radius:12px;overflow:hidden;border:1px solid #4a4536;display:flex;flex-direction:column}
- .mq-pair img{width:100%;height:78px;object-fit:cover;display:block}
- .mq-pair span{padding:8px 10px 10px;display:flex;flex-direction:column;gap:2px}
- .mq-pair b{font-family:"Stardos Stencil",Impact,sans-serif;font-size:17px;line-height:1.05}
- .mq-pair small{font-size:11px;color:#d8c98f}
- .mq-soon{border:1.5px dashed #4a4536;border-radius:12px;padding:10px 14px;display:flex;justify-content:space-between;align-items:center;gap:10px}
- .mq-soon b{font-family:"Stardos Stencil",Impact,sans-serif;font-size:16px}
- .mq-soon small{font-size:12px;color:#d8c98f;white-space:nowrap}
- .mq-links{display:flex;flex-wrap:wrap;gap:8px;padding:0 16px 18px}
- .mq-links a{min-height:40px;padding:0 12px;display:grid;place-items:center;border-radius:20px;border:1.5px solid #4a4536;font-size:13px}
+ .mq-hi p{margin:8px 0 0;font-size:14px;line-height:1.45}
+ .mq-list{display:flex;flex-direction:column;padding:10px 16px 18px}
+ .mq-row,.mq-ec summary{display:flex;align-items:center;gap:12px;padding:8px 0;border-bottom:1px solid #3a3629;min-height:52px;cursor:pointer;list-style:none}
+ .mq-ec summary::-webkit-details-marker{display:none}
+ .mq-row img,.mq-ec summary img{width:52px;height:52px;border-radius:10px;object-fit:cover;flex:none}
+ .mq-row span,.mq-ec summary span{display:flex;flex-direction:column;flex-grow:1;min-width:0}
+ .mq-row b,.mq-ec summary b{font-family:"Stardos Stencil",Impact,sans-serif;font-size:18px;line-height:1.1}
+ .mq-row small,.mq-ec summary small{font-size:12px;color:#d8c98f}
+ .mq-row i,.mq-ec summary i{font-style:normal;font-size:26px;color:#e0675b;flex:none;transition:transform .2s}
+ .mq-ec[open] summary i{transform:rotate(90deg)}
+ .mq-ec .sub{display:grid;gap:6px;padding:8px 0 10px 64px;border-bottom:1px solid #3a3629}
+ .mq-ec .sub a{min-height:44px;display:flex;align-items:center;justify-content:space-between;padding:0 12px;border-radius:8px;background:#f4efe1;color:#1f1d17!important;font-weight:700;font-size:14px}
+ .mq-soon{opacity:.75;cursor:default}
+ .mq-soon .mq-ph{width:52px;height:52px;border-radius:10px;border:1.5px dashed #8a8270;display:grid;place-items:center;font-size:11px;flex:none}
+ .mq-how{margin-top:auto;display:block;background:#f4efe1;color:#1f1d17!important;padding:14px 16px 18px;border-radius:18px 18px 0 0}
+ .mq-how .h{display:flex;justify-content:space-between;align-items:center;font-family:"Special Elite",monospace;font-size:12px;letter-spacing:2px;color:#a3261e}
+ .mq-how .h span{font-family:"Courier Prime",monospace;letter-spacing:0;font-weight:700;color:#1f1d17;animation:mqb 1.6s ease-in-out infinite}
+ .mq-how b{display:block;font-family:"Stardos Stencil",Impact,sans-serif;font-size:21px;line-height:1.15;margin-top:6px;font-weight:700}
+ @keyframes mqb{0%,100%{transform:translateY(0)}50%{transform:translateY(4px)}}
+ @media (prefers-reduced-motion:reduce){.mq-how .h span{animation:none}}
 }
 </style>
 </head>
@@ -288,25 +284,19 @@ footer nav a{color:#ece4cc}
    <a href="#how">How it works</a><a href="places/">All 372 sites</a><a href="visit/">Trip ideas</a><a href="#downloads">Download the PDFs</a><a href="spanish-civil-war/es.html" lang="es">Guía en español</a>
   </nav></details>
  </div>
- <div class="mq-hi"><h1>EVERY BATTLEFIELD HAS A <em>STORY.</em></h1><p>Free guides for your phone · no sign-up · works offline</p></div>
- <div class="mq-k">PICK YOUR BATTLEFIELD</div>
+ <div class="mq-hi"><h1>EVERY BATTLEFIELD HAS A <em>STORY.</em></h1><p>Free guides that plan your route, find the exact spot with no signal, and tell you what happened there. Pick a guide to open it:</p></div>
  <div class="mq-list">
-  <div class="mq-card">
-   <a class="mq-pic" href="normandy.html"><img src="welcome-wide.jpg" alt="Easy Company guide cover"><span><b>EASY COMPANY</b> <small>WWII · 1944–45</small></span></a>
-   <div class="mq-btns"><a href="normandy.html">Normandy</a><a href="holland-bastogne.html">Holland &amp; Bastogne</a><a href="germany-austria.html">Germany &amp; Austria</a></div>
-  </div>
-  <div class="mq-card" style="background:#3d2b1f">
-   <a class="mq-pic" href="spanish-civil-war/"><img src="site/scw-wide.jpg" alt="Spanish Civil War guide cover"><span><b>THE SPANISH CIVIL WAR</b> <small>1936–39</small></span></a>
-   <div class="mq-btns two"><a href="spanish-civil-war/">Open the guide</a><a class="es" href="spanish-civil-war/es.html" lang="es">En español</a></div>
-  </div>
-  <div class="mq-pair">
-   <a href="footsteps-of-wwii/" style="background:#24323f"><img src="site/uw-wide.jpg" alt="Footsteps of WWII guide cover"><span><b>FOOTSTEPS OF WWII</b><small>Europe 1939–45 · Open ›</small></span></a>
-   <a href="into-europe/" style="background:#22392b"><img src="site/ie-wide.jpg" alt="Into Europe guide cover"><span><b>INTO EUROPE</b><small>Italy 1943–45 · Open ›</small></span></a>
-  </div>
-  <div class="mq-soon"><span><small style="display:block;letter-spacing:1px">NEXT ON THE MAP</small><b>THE GREAT WAR IN BELGIUM</b></span><small>Coming soon</small></div>
+  <details class="mq-ec"><summary><img src="welcome-wide.jpg" alt=""><span><b>EASY COMPANY</b><small>Normandy · Holland · Germany</small></span><i aria-hidden="true">›</i></summary>
+   <div class="sub"><a href="normandy.html">1 · Normandy <span>›</span></a><a href="holland-bastogne.html">2 · Holland &amp; Bastogne <span>›</span></a><a href="germany-austria.html">3 · Germany &amp; Austria <span>›</span></a></div>
+  </details>
+  <a class="mq-row" href="spanish-civil-war/"><img src="site/scw-wide.jpg" alt=""><span><b>THE SPANISH CIVIL WAR</b><small>Spain 1936–39 · English &amp; <span lang="es" style="display:inline">español</span></small></span><i aria-hidden="true">›</i></a>
+  <a class="mq-row" href="footsteps-of-wwii/"><img src="site/uw-wide.jpg" alt=""><span><b>FOOTSTEPS OF WWII</b><small>The whole war in Europe 1939–45</small></span><i aria-hidden="true">›</i></a>
+  <a class="mq-row" href="into-europe/"><img src="site/ie-wide.jpg" alt=""><span><b>INTO EUROPE</b><small>Italy 1943–45</small></span><i aria-hidden="true">›</i></a>
+  <div class="mq-row mq-soon"><div class="mq-ph">SOON</div><span><b>THE GREAT WAR IN BELGIUM</b><small>WWI 1914–18 · coming soon</small></span></div>
  </div>
- <div class="mq-links"><a href="places/">All 372 sites</a><a href="visit/">Trip ideas</a><a href="#downloads">PDFs</a><a href="#how">How it works</a></div>
+ <a class="mq-how" href="#how"><span class="h">HOW IT WORKS <span>Scroll ↓</span></span><b>01 PLOT YOUR ROUTE · 02 FIND THE EXACT SPOT · 03 KEEP THE STORY</b></a>
 </section>
+
 
 
 <header class="hero">
