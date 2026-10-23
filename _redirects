@@ -13,6 +13,7 @@
 /audio/*                  https://easyco44.netlify.app/audio/:splat            200
 /pdf/*                    https://easyco44.netlify.app/pdf/:splat              200
 /weapons/*                https://easyco44.netlify.app/weapons/:splat          200
+/lib/*                    https://easyco44.netlify.app/lib/:splat              200
 /spanish-civil-war/*      https://spanishwar.netlify.app/:splat                200
 /into-europe/*            https://intoeurope.netlify.app/:splat                200
 /footsteps-of-wwii/*      https://understanding-wwii.netlify.app/:splat        200
