@@ -278,13 +278,60 @@ footer nav a{color:#ece4cc}
  @media (prefers-reduced-motion:reduce){.mq-how .h span{animation:none}}
 }
 </style>
+<style id="trust-css">
+/* Numbers note, Try a stop, Who makes this (24 Oct 2026) */
+.stats-note{margin:0;padding-bottom:26px;font-family:var(--mono);font-size:15px;line-height:1.5;color:#ffe3d6}
+.allsites span{display:block;font-weight:400;font-size:15px;color:var(--muted);margin-top:6px}
+.sample{background:var(--paper2);padding:90px 0}
+.sgrid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:28px;align-items:start}
+.scard,.smap,.svisit,.ssrc{background:#fffdf6;box-shadow:0 18px 40px rgba(31,29,23,.16)}
+.scard{padding:34px 38px}
+.scard h3,.svisit h3{font-size:26px;margin:22px 0 8px}
+.scard p,.svisit p{margin:0;font-size:18px;line-height:1.55;color:var(--ink2)}
+.smeta{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;font-family:var(--mono);font-size:15px;color:var(--muted)}
+.smeta>span:first-child{font-family:var(--label);letter-spacing:2px;color:var(--red-t)}
+.sdisp{margin-top:24px;border:2px dashed #9a8f6c;padding:16px 18px;font-size:16px;line-height:1.5;color:var(--ink2)}
+.sdisp b{display:block;font-family:var(--label);font-weight:400;font-size:13px;letter-spacing:2px;color:var(--red-t);margin-bottom:6px;text-transform:uppercase}
+.sside{display:flex;flex-direction:column;gap:18px}
+.smap{margin:0;padding:10px}
+.smap img{width:100%;height:auto}
+.smap figcaption{font-family:var(--mono);font-size:14px;color:var(--muted);padding:10px 4px 2px}
+.svisit{padding:22px 26px}.svisit h3{margin-top:0}
+.svisit small{display:block;margin-top:10px;font-family:var(--mono);font-size:14px;color:var(--muted)}
+.ssrc{padding:20px 26px;display:flex;flex-direction:column;gap:6px;font-size:16px}
+.ssrc b{font-family:var(--label);font-weight:400;font-size:13px;letter-spacing:2px;color:var(--red-t);text-transform:uppercase}
+.sbtn{display:flex;flex-wrap:wrap;gap:12px}
+.sbtn .btn{flex:1 1 200px;font-size:17px;padding:12px 18px}
+.sbtn .btn.line{color:var(--ink)}
+.about{padding:96px 0}
+.agrid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr) minmax(0,1fr);gap:24px}
+.acard{background:#fffdf6;box-shadow:0 18px 40px rgba(31,29,23,.16);padding:30px}
+.acard h3{font-size:28px;margin:0 0 12px}
+.acard p{margin:0 0 12px;font-size:17px;line-height:1.55;color:var(--ink2)}
+.acard ol{margin:0;padding-left:22px;display:flex;flex-direction:column;gap:12px;font-size:17px;line-height:1.5;color:var(--ink2)}
+.acard ol b{color:var(--ink)}
+.acard.who{background:var(--olive);color:#ece4cc}.acard.who p{color:#ddd4b8}
+.who .mono{width:64px;height:64px;border:3px solid #ece4cc;display:flex;align-items:center;justify-content:center;font-family:var(--disp);font-weight:700;font-size:26px;margin-bottom:18px}
+.conf{list-style:none;margin:0 0 22px;padding:0;display:flex;flex-direction:column;gap:12px;font-size:16px;line-height:1.45;color:var(--ink2)}
+.conf .pill{margin-right:6px}
+.acard p.srcs{font-size:16px}
+.fix{margin-top:28px;background:var(--red);color:#fff4ea;padding:28px 34px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.fix b{display:block;font-family:var(--disp);font-size:30px;letter-spacing:1px;margin-bottom:6px}
+.fix span{font-size:17px}
+.fix .btn{background:#fff4ea;color:var(--red-t);flex:none}
+footer nav span a{color:#ece4cc}
+@media (max-width:1180px){.agrid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.agrid .who{grid-column:1/-1}}
+@media (max-width:900px){.sgrid,.agrid{grid-template-columns:minmax(0,1fr)}.fix{flex-direction:column;align-items:flex-start}}
+@media (max-width:700px){.sample{padding:56px 0}.about{padding:60px 0}.scard,.acard,.fix{padding:24px 20px}.fix b{font-size:24px}.sample .gh h2,.about .gh h2{font-size:40px}}
+</style>
+
 </head>
 <body>
 <section class="mq" aria-label="DZ Charlie field guides">
  <div class="mq-top">
   <a class="mq-brand" href="./" aria-label="DZ Charlie field guides, home"><span class="mq-dz">DZ</span><span><b>DZ CHARLIE</b><small>FIELD GUIDES · FREE</small></span></a>
   <details class="mq-menu"><summary>Menu</summary><nav aria-label="Menu">
-   <a href="#how">How it works</a><a href="places/">All 372 sites</a><a href="visit/">Trip ideas</a><a href="#downloads">Download the PDFs</a><a href="spanish-civil-war/es.html" lang="es">Guía en español</a>
+   <a href="#how">How it works</a><a href="#sample">Try a stop</a><a href="places/">Site directory</a><a href="#about">Who makes this</a><a href="visit/">Trip ideas</a><a href="#downloads">Download the PDFs</a><a href="spanish-civil-war/es.html" lang="es">Guía en español</a>
   </nav></details>
  </div>
  <div class="mq-hi"><h1>EVERY BATTLEFIELD HAS A <em>STORY.</em></h1><p>Free guides that plan your route, find the exact spot with no signal, and tell you what happened there. Pick a guide to open it:</p></div>
@@ -312,6 +359,7 @@ footer nav a{color:#ece4cc}
       <nav class="menu" id="menu" aria-label="Main">
         <a href="#how">How it works</a>
         <a href="#guides">The guides</a>
+        <a href="#about">Who makes this</a>
         <a href="#downloads">Downloads</a>
         <a class="cta" href="#guides">Pick your battlefield</a>
       </nav>
@@ -330,18 +378,48 @@ footer nav a{color:#ece4cc}
         <div class="ph b"><img src="site/home-normandy.jpg" alt=""><span>02 · HEAR THE STORY</span></div>
       </div>
     </div>
-    <div class="why"><small>WHY “DZ CHARLIE”? DROP ZONE C, NORMANDY, THE NIGHT OF 5–6 JUNE 1944. WHERE OUR FIRST GUIDE BEGINS.</small><span class="stamp">3 GUIDES LIVE · MORE INBOUND</span></div>
+    <div class="why"><small>WHY “DZ CHARLIE”? DROP ZONE C, NORMANDY, THE NIGHT OF 5–6 JUNE 1944. WHERE OUR FIRST GUIDE BEGINS.</small><span class="stamp">4 GUIDES LIVE · MORE INBOUND</span></div>
   </div>
 </header>
 
 <section class="stats grid" aria-label="The collection in numbers">
   <ul class="wrap">
-    <li><b>344</b><span>places to stand</span></li>
-    <li><b>7</b><span>countries on the map</span></li>
+    <li><b>532</b><span>sites across 4 guides</span></li>
+    <li><b>16</b><span>countries on the map</span></li>
     <li><b>2</b><span>wars, and counting</span></li>
     <li><b>0</b><span>bars of signal needed</span></li>
     <li><b>€0</b><span>free, every guide</span></li>
   </ul>
+  <p class="wrap stats-note">How we count: 532 sites in the four guides (Easy Company 118, the Spanish Civil War 158, Into Europe 96, Footsteps of WWII 160). About 50 famous places, such as Pegasus Bridge, appear in two guides, so that is roughly 480 different places to stand.</p>
+</section>
+
+<section class="sample" id="sample" aria-labelledby="sample-h">
+  <div class="wrap">
+    <div class="gh"><div><span class="eyebrow">TRY A STOP · FROM FOOTSTEPS OF WWII</span><h2 id="sample-h">POINTE DU HOC</h2></div><span>One stop, exactly as the guide gives it to you. Every guide has hundreds like it.</span></div>
+    <div class="sgrid">
+      <article class="scard">
+        <div class="smeta"><span>NORMANDY, FRANCE · 6–8 JUNE 1944</span><span>Allow 1 hr</span><span><span class="pill h">HIGH</span> exact spot known</span></div>
+        <h3>What happened</h3>
+        <p>German guns on this 35-metre headland between Utah and Omaha were thought to threaten both beaches. On 6 June 1944, 225 men of the 2nd Ranger Battalion under Lieutenant Colonel James Earl Rudder landed late, at about 07:10, and climbed the cliffs with rocket-fired grapnels and ladders under fire. At the top they found the casemates empty: the guns had been moved inland. Patrols found five of the six in an orchard and wrecked them with thermite grenades by about 09:00. The Rangers then held the headland against counter-attacks until relieved on 8 June, by when only about 90 were still fit to fight.</p>
+        <h3>What you see today</h3>
+        <p>The ground is still a moonscape of bomb craters around ruined casemates and the observation bunker at the cliff edge, topped by the granite Ranger Monument. Look over the edge at the cliffs the Rangers climbed.</p>
+        <div class="sdisp"><b>Where accounts differ</b>A popular myth says the assault was pointless because the guns had gone. In fact the guns were nearby and could still reach the beaches, and the Rangers found and disabled them on the morning of D-Day.</div>
+      </article>
+      <aside class="sside" aria-label="Map and visiting information for Pointe du Hoc">
+        <figure class="smap"><img src="site/sample-pointe-du-hoc-map.jpg" width="750" height="384" alt="Road map of the Normandy coast between Grandcamp-Maisy and Vierville-sur-Mer, with a red pin on Pointe du Hoc" loading="lazy"><figcaption>GPS 49.39738, -0.98936 · the guide's own map, works with no signal</figcaption></figure>
+        <div class="svisit"><h3>Visiting</h3>
+          <p>Free; open daily 09:00–17:00. Works by the American Battle Monuments Commission run until mid-2027: the visitor centre and main car park (P1) are closed, and some paths and bunkers are fenced off. Access is by the west path only, with temporary parking signposted.</p>
+          <small>Checked October 2026. Check the website before you go.</small>
+        </div>
+        <div class="ssrc"><b>Sources for this stop</b>
+          <a href="https://www.abmc.gov/pointe-du-hoc-ranger-monument-restoration-project" rel="noopener">American Battle Monuments Commission</a>
+          <a href="https://en.wikipedia.org/wiki/Pointe_du_Hoc" rel="noopener">Wikipedia: Pointe du Hoc</a>
+          <a href="https://uswarmemorials.org/html/site_details.php?SiteID=553" rel="noopener">US War Memorials (the exact position)</a>
+        </div>
+        <div class="sbtn"><a class="btn red" href="footsteps-of-wwii/">Open Footsteps of WWII →</a><a class="btn line" href="https://www.google.com/maps/dir/?api=1&amp;destination=49.397382,-0.989361" rel="noopener">Directions</a></div>
+      </aside>
+    </div>
+  </div>
 </section>
 
 <main>
@@ -380,7 +458,7 @@ footer nav a{color:#ece4cc}
     <article class="guide g-ec">
       <img class="cover" src="welcome-wide.jpg" alt="Easy Company guide cover">
       <div class="txt"><small>WORLD WAR II · 1944–1945 · 5 COUNTRIES</small><h3>EASY COMPANY</h3>
-        <p>Jump with the 506th into Normandy, hold the line at Bastogne, finish at the Eagle's Nest. 90 stops, 146 spoken stories.</p></div>
+        <p>Jump with the 506th into Normandy, hold the line at Bastogne, finish at the Eagle's Nest. 118 sites, 90 of them on the ready-made route, and 146 spoken stories.</p></div>
       <div class="act">
         <a href="normandy.html">1 · Normandy →</a>
         <a href="holland-bastogne.html">2 · Holland &amp; Bastogne →</a>
@@ -434,9 +512,46 @@ footer nav a{color:#ece4cc}
       <div class="act"><span>Coming soon</span></div>
     </article>
   </div>
-  <p class="wrap allsites"><a href="places/">Browse all 372 sites in the guides, with stories, visiting info and directions →</a></p>
+  <p class="wrap allsites"><a href="places/">Site directory: 372 sites from Easy Company, Into Europe and the Spanish Civil War, each on its own page with the story, visiting info and directions →</a><span>The 160 sites of Footsteps of WWII are inside that guide and will join the directory soon.</span></p>
 <p class="wrap allsites"><a href="visit/">Trip ideas: Band of Brothers sites, D-Day, Bastogne, Monte Cassino, Sicily and the Spanish Civil War →</a></p>
 
+</section>
+
+<section class="about" id="about" aria-labelledby="about-h">
+  <div class="wrap">
+    <div class="gh"><div><span class="eyebrow">WHO MAKES THIS · HOW WE RESEARCH</span><h2 id="about-h">CHECKED, SOURCED, CORRECTABLE</h2></div><span>History deserves care. Here is who is behind the guides and how every stop is put together.</span></div>
+    <div class="agrid">
+      <article class="acard who">
+        <div class="mono">JC</div>
+        <h3>Made by JC</h3>
+        <p>DZ Charlie is an independent project by JC, a professional photographer. The guides are free, with no ads and no sign-up, and the site sets no cookies.</p>
+        <p>The name comes from Drop Zone C in Normandy, where Easy Company's war began on the night of 5–6 June 1944, and where the first guide starts.</p>
+      </article>
+      <article class="acard">
+        <h3>How every stop is researched</h3>
+        <ol>
+          <li><b>From opened sources.</b> Each stop is written from sources read for that stop: the site's own museum or memorial pages, Wikipedia in several languages, TracesOfWar and local history sites.</li>
+          <li><b>Pins checked twice.</b> The exact spot comes from a published position. In Footsteps of WWII, Into Europe and the Spanish Civil War every pin was then checked again against OpenStreetMap, and pins that were off were moved.</li>
+          <li><b>Disputes shown, not hidden.</b> Where sources disagree on numbers, dates or who did what, the stop says so.</li>
+          <li><b>Visiting info dated.</b> Prices, opening times and closures are checked and dated, because they change.</li>
+        </ol>
+      </article>
+      <article class="acard">
+        <h3>How sure we are</h3>
+        <ul class="conf">
+          <li><span class="pill h">HIGH</span> Exact spot known: a landmark, museum, cemetery, memorial, bridge or building, or a position fixed by the records.</li>
+          <li><span class="pill m">MEDIUM</span> Well supported, but the exact spot is uncertain.</li>
+          <li><span class="pill l">LOW</span> General area only: the pin is the centre of a search area.</li>
+        </ul>
+        <h3>Main sources</h3>
+        <p class="srcs">American Battle Monuments Commission · Volksbund (German war graves) · Auschwitz-Birkenau Memorial · regional heritage services · museum and memorial websites · Wikipedia · TracesOfWar · OpenStreetMap. Each guide lists its sources.</p>
+      </article>
+    </div>
+    <div class="fix">
+      <div><b>SPOTTED A MISTAKE?</b><span>Every stop in every guide has a “Report a problem” button, or you can write directly. We read every message and fix confirmed mistakes in the next update.</span></div>
+      <a class="btn" href="mailto:jj28@posteo.uk?subject=DZ%20Charlie%20correction">Send a correction →</a>
+    </div>
+  </div>
 </section>
 
 <section class="dls" id="downloads">
@@ -467,8 +582,8 @@ footer nav a{color:#ece4cc}
   <div class="wrap">
     <div><b>REMEMBER · EXPLORE · RESPECT</b><p>Many fields are private: view them from the road. Cemeteries and memorials are places of remembrance first.</p></div>
     <nav aria-label="Guides">
-      <a href="normandy.html">Normandy</a><a href="holland-bastogne.html">Holland &amp; Bastogne</a><a href="germany-austria.html">Germany &amp; Austria</a><a href="spanish-civil-war/">The Spanish Civil War</a><a href="into-europe/">Into Europe · Italy</a><a href="footsteps-of-wwii/">Footsteps of WWII</a><a href="places/">All 372 sites</a><a href="visit/">Trip ideas</a>
-      <span>DZ Charlie · field guides made with care by JC</span><span>Maps © OpenStreetMap contributors · Manual drawings: US War Department (public domain)</span>
+      <a href="normandy.html">Normandy</a><a href="holland-bastogne.html">Holland &amp; Bastogne</a><a href="germany-austria.html">Germany &amp; Austria</a><a href="spanish-civil-war/">The Spanish Civil War</a><a href="into-europe/">Into Europe · Italy</a><a href="footsteps-of-wwii/">Footsteps of WWII</a><a href="places/">Site directory</a><a href="visit/">Trip ideas</a>
+      <span>DZ Charlie · field guides made with care by JC · <a href="#about">How we research</a> · <a href="mailto:jj28@posteo.uk?subject=DZ%20Charlie%20correction">Report a mistake</a></span><span>Maps © OpenStreetMap contributors · Manual drawings: US War Department (public domain)</span>
     </nav>
   </div>
 </footer>
