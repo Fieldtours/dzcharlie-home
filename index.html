@@ -234,27 +234,49 @@ footer nav a{color:#ece4cc}
 @media (prefers-reduced-motion:reduce){.es-stamp{transition:none}}
 </style>
 <style id="mq-css">
-/* Phones: guides first, with a short explanation and the next section peeking (design A5). Computers keep the full page. */
+/* Phones: a cinematic DZ Charlie cover (design 1, Oct 2026): the four guide covers fade one into the next,
+   DZ Charlie leads, the guides follow as the collection. Computers keep the full page. */
 .mq{display:none}
 @media (max-width:700px){
- .mq{display:flex;flex-direction:column;min-height:100vh;min-height:100svh;box-sizing:border-box;background:#181a0d;color:#f4efe1;font-family:"Courier Prime","Courier New",monospace}
+ .mq{display:block;background:#181a0d;color:#f4efe1;font-family:"Courier Prime","Courier New",monospace}
  header.hero,section.band,section.guides,section.stats{display:none!important}
  section.features{padding-top:28px!important}
  .mq a{color:#f4efe1;text-decoration:none}
- .mq-top{display:flex;align-items:center;justify-content:space-between;padding:10px 16px;border-bottom:1px solid #3a3629;position:relative}
- .mq-brand{display:flex;align-items:center;gap:10px}
- .mq-dz{width:36px;height:36px;border:2px solid #d8c98f;border-radius:6px;display:grid;place-items:center;font-family:"Stardos Stencil",Impact,sans-serif;font-weight:700;font-size:16px;color:#d8c98f}
- .mq-brand b{display:block;font-family:"Stardos Stencil",Impact,sans-serif;font-size:17px;letter-spacing:1px}
- .mq-brand small{display:block;font-size:11px;letter-spacing:1px;color:#d8c98f}
- .mq-menu summary{list-style:none;min-height:44px;padding:0 14px;display:grid;place-items:center;border:1.5px solid #d8c98f;border-radius:8px;font-weight:700;cursor:pointer}
+ .mq-hero{position:relative;overflow:hidden;min-height:640px;height:100vh;height:100svh;max-height:900px;display:flex;flex-direction:column}
+ .mq-sl{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;animation:mqshow 24s linear infinite}
+ .mq-sl.s1{opacity:1;object-position:50% 30%}.mq-sl.s2{animation-delay:6s;object-position:50% 50%}.mq-sl.s3{animation-delay:12s}.mq-sl.s4{animation-delay:18s;object-position:50% 40%}
+ .mq-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(24,26,13,.9) 0%,rgba(24,26,13,.35) 22%,rgba(24,26,13,.3) 38%,rgba(24,26,13,.93) 62%,#181a0d 100%)}
+ .mq-top{position:relative;z-index:5;display:flex;align-items:center;justify-content:space-between;padding:12px 16px}
+ .mq-top>span{font-family:"Special Elite",monospace;font-size:11px;letter-spacing:3px;color:#d8c98f}
+ .mq-menu summary{list-style:none;min-height:44px;padding:0 16px;display:grid;place-items:center;border:2px solid rgba(244,239,225,.7);border-radius:22px;font-weight:700;cursor:pointer}
  .mq-menu summary::-webkit-details-marker{display:none}
  .mq-menu nav{position:absolute;right:16px;top:62px;z-index:50;background:#2f3419;border:1px solid #4a4536;border-radius:10px;padding:6px;display:grid;min-width:220px;box-shadow:0 10px 30px rgba(0,0,0,.5)}
  .mq-menu nav a{min-height:44px;display:flex;align-items:center;padding:0 12px;border-radius:8px}
- .mq-hi{padding:14px 16px 0}
- .mq-hi h1{margin:0;font-family:"Stardos Stencil",Impact,sans-serif;font-size:27px;line-height:1.05;font-weight:700;color:#f4efe1}
- .mq-hi h1 em{font-style:normal;color:#e0675b}
- .mq-hi p{margin:8px 0 0;font-size:14px;line-height:1.45}
- .mq-list{display:flex;flex-direction:column;padding:10px 16px 18px}
+ .mq-brand{position:relative;display:flex;align-items:center;gap:14px;padding:14px 20px 0;animation:mqrise .8s .2s both}
+ .mq-dz{width:62px;height:62px;flex:none;border:3px solid #f4efe1;display:grid;place-items:center;font-family:"Stardos Stencil",Impact,sans-serif;font-weight:700;font-size:25px}
+ .mq-brand b{display:block;white-space:nowrap;font-family:"Stardos Stencil",Impact,sans-serif;font-weight:700;font-size:clamp(28px,9.8vw,44px);line-height:.9;letter-spacing:2px}
+ .mq-brand small{display:block;white-space:nowrap;font-family:"Special Elite",monospace;font-size:clamp(10px,3vw,12px);letter-spacing:clamp(2px,.9vw,4px);color:#d8c98f;margin-top:4px}
+ .mq-main{position:relative;margin-top:auto;padding:0 20px 112px;display:flex;flex-direction:column;gap:12px}
+ .mq-on{position:relative;height:24px}
+ .mq-on span{position:absolute;left:0;top:0;opacity:0;white-space:nowrap;font-size:12px;background:rgba(163,38,30,.92);padding:4px 8px;animation:mqtag 24s linear infinite}
+ .mq-on .s1{opacity:1}.mq-on .s2{animation-delay:6s}.mq-on .s3{animation-delay:12s}.mq-on .s4{animation-delay:18s}
+ .mq-main h1{margin:0;font-family:"Stardos Stencil",Impact,sans-serif;font-weight:700;font-size:clamp(32px,10.4vw,42px);line-height:.95;animation:mqrise .8s .45s both}
+ .mq-main h1 em{font-style:normal;color:#e8573f}
+ .mq-main p{margin:0;font-family:Georgia,serif;font-size:16px;line-height:1.45;color:#e6dcc0;animation:mqrise .8s .45s both}
+ .mq-btns{display:flex;flex-direction:column;gap:10px;margin-top:2px;animation:mqrise .8s .7s both}
+ .mq-go{display:flex;align-items:center;justify-content:center;min-height:54px;background:#a3261e;color:#fff!important;font-weight:700;font-size:17px;letter-spacing:.5px}
+ .mq-try{display:flex;align-items:center;justify-content:center;gap:10px;min-height:46px;border:2px solid rgba(244,239,225,.8);font-weight:700;font-size:15px}
+ .mq-strip{position:absolute;left:0;right:0;bottom:0;height:100px;overflow:hidden;border-top:1px solid rgba(216,201,143,.3);background:rgba(24,26,13,.6)}
+ .mq-strip>small{display:block;font-family:"Special Elite",monospace;font-size:10px;letter-spacing:3px;color:#d8c98f;padding:8px 16px 0}
+ .mq-run{display:flex;gap:10px;padding:8px 0 0 16px;width:max-content;animation:mqstrip 28s linear infinite}
+ .mq-strip:hover .mq-run,.mq-strip:active .mq-run,.mq-strip:focus-within .mq-run{animation-play-state:paused}
+ .mq-run a{display:flex;align-items:center;gap:8px;width:214px;flex:none;min-height:52px}
+ .mq-run img{width:52px;height:52px;object-fit:cover;border-radius:8px}
+ .mq-run span{font-size:12px;line-height:1.25}.mq-run b{display:block;font-family:"Stardos Stencil",Impact,sans-serif;font-size:15px}
+ .mq-col{padding:22px 16px 26px}
+ .mq-col>small{display:block;font-family:"Special Elite",monospace;font-size:11px;letter-spacing:3px;color:#d8c98f}
+ .mq-col>h2{margin:6px 0 6px;font-family:"Stardos Stencil",Impact,sans-serif;font-size:28px;line-height:1}
+ .mq-list{display:flex;flex-direction:column}
  .mq-row,.mq-ec summary{display:flex;align-items:center;gap:12px;padding:8px 0;border-bottom:1px solid #3a3629;min-height:52px;cursor:pointer;list-style:none}
  .mq-ec summary::-webkit-details-marker{display:none}
  .mq-row img,.mq-ec summary img{width:52px;height:52px;border-radius:10px;object-fit:cover;flex:none}
@@ -270,12 +292,15 @@ footer nav a{color:#ece4cc}
  .mq-es{flex:none;min-height:44px;padding:0 12px;display:grid;place-items:center;border-radius:22px;background:#f0c46b;color:#1f1d17!important;font-weight:700;font-size:13px}
  .mq-soon{opacity:.75;cursor:default}
  .mq-soon .mq-ph{width:52px;height:52px;border-radius:10px;border:1.5px dashed #8a8270;display:grid;place-items:center;font-size:11px;flex:none}
- .mq-how{margin-top:auto;display:block;background:#f4efe1;color:#1f1d17!important;padding:14px 16px 18px;border-radius:18px 18px 0 0}
- .mq-how .h{display:flex;justify-content:space-between;align-items:center;font-family:"Special Elite",monospace;font-size:12px;letter-spacing:2px;color:#a3261e}
- .mq-how .h span{font-family:"Courier Prime",monospace;letter-spacing:0;font-weight:700;color:#1f1d17;animation:mqb 1.6s ease-in-out infinite}
- .mq-how b{display:block;font-family:"Stardos Stencil",Impact,sans-serif;font-size:21px;line-height:1.15;margin-top:6px;font-weight:700}
- @keyframes mqb{0%,100%{transform:translateY(0)}50%{transform:translateY(4px)}}
- @media (prefers-reduced-motion:reduce){.mq-how .h span{animation:none}}
+ @keyframes mqshow{0%{opacity:0;transform:scale(1.06)}6%{opacity:1}25%{opacity:1}31%{opacity:0;transform:scale(1.2)}100%{opacity:0;transform:scale(1.2)}}
+ @keyframes mqtag{0%{opacity:0}6%{opacity:1}25%{opacity:1}31%{opacity:0}100%{opacity:0}}
+ @keyframes mqrise{0%{opacity:0;transform:translateY(14px)}100%{opacity:1;transform:none}}
+ @keyframes mqstrip{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+ @media (prefers-reduced-motion:reduce){
+  .mq-sl,.mq-on span,.mq-brand,.mq-main h1,.mq-main p,.mq-btns,.mq-run{animation:none!important}
+  .mq-sl:not(.s1),.mq-on span:not(.s1){opacity:0!important}
+  .mq-run{width:auto;overflow-x:auto;padding-right:16px}
+ }
 }
 </style>
 <style id="trust-css">
@@ -358,14 +383,30 @@ if(location.hash==="#sample")addEventListener("DOMContentLoaded",function(){var 
 </head>
 <body>
 <section class="mq" aria-label="DZ Charlie field guides">
- <div class="mq-top">
-  <a class="mq-brand" href="./" aria-label="DZ Charlie field guides, home"><span class="mq-dz">DZ</span><span><b>DZ CHARLIE</b><small>FIELD GUIDES · FREE</small></span></a>
+ <div class="mq-hero">
+  <img class="mq-sl s1" src="site/cover-ec.jpg" alt="" fetchpriority="high">
+  <img class="mq-sl s2" src="site/cover-uw.jpg" alt="" decoding="async">
+  <img class="mq-sl s3" src="site/cover-scw.jpg" alt="" decoding="async">
+  <img class="mq-sl s4" src="site/cover-ie.jpg" alt="" decoding="async">
+  <div class="mq-shade"></div>
+  <div class="mq-top"><span>FREE · NO SIGN-UP · OFFLINE</span>
   <details class="mq-menu"><summary>Menu</summary><nav aria-label="Menu">
    <a href="#how">How it works</a><a href="#sample">Try a stop</a><a href="places/">Site directory</a><a href="#about">Who makes this</a><a href="visit/">Trip ideas</a><a href="#downloads">Download the PDFs</a><a href="spanish-civil-war/es.html" lang="es">Guía en español</a>
   </nav></details>
+  </div>
+  <a class="mq-brand" href="./" aria-label="DZ Charlie battlefield field guides, home"><span class="mq-dz" aria-hidden="true">DZ</span><span><b>DZ CHARLIE</b><small>BATTLEFIELD FIELD GUIDES</small></span></a>
+  <div class="mq-main">
+   <div class="mq-on" aria-hidden="true"><span class="s1">ON SCREEN: EASY COMPANY</span><span class="s2">ON SCREEN: FOOTSTEPS OF WWII</span><span class="s3">ON SCREEN: THE SPANISH CIVIL WAR</span><span class="s4">ON SCREEN: INTO EUROPE</span></div>
+   <h1>EVERY BATTLEFIELD<br>HAS A <em>STORY.</em></h1>
+   <p>One collection of free guides to the battlefields of Europe. Each plans your route, finds the exact spot with no signal, and tells you what happened there.</p>
+   <div class="mq-btns"><a class="mq-go" href="#collection">Find a guide for my trip →</a><a class="mq-try" href="#sample"><svg width="16" height="16" viewBox="0 0 24 24" fill="#f4efe1" aria-hidden="true"><path d="M7 4l13 8-13 8z"/></svg>Try a stop: Pointe du Hoc</a></div>
+  </div>
+  <div class="mq-strip"><small>THE COLLECTION · 4 GUIDES · MORE COMING</small><div class="mq-run"><a href="normandy.html"><img src="welcome-wide.jpg" alt="" loading="lazy"><span><b>EASY COMPANY</b>Normandy to the Eagle's Nest</span></a><a href="footsteps-of-wwii/"><img src="site/uw-wide.jpg" alt="" loading="lazy"><span><b>FOOTSTEPS OF WWII</b>The whole war in Europe</span></a><a href="spanish-civil-war/"><img src="site/scw-wide.jpg" alt="" loading="lazy"><span><b>SPANISH CIVIL WAR</b>Spain 1936–39 · en español</span></a><a href="into-europe/"><img src="site/ie-wide.jpg" alt="" loading="lazy"><span><b>INTO EUROPE</b>Italy 1943–45</span></a><a href="normandy.html" aria-hidden="true" tabindex="-1"><img src="welcome-wide.jpg" alt="" loading="lazy"><span><b>EASY COMPANY</b>Normandy to the Eagle's Nest</span></a><a href="footsteps-of-wwii/" aria-hidden="true" tabindex="-1"><img src="site/uw-wide.jpg" alt="" loading="lazy"><span><b>FOOTSTEPS OF WWII</b>The whole war in Europe</span></a><a href="spanish-civil-war/" aria-hidden="true" tabindex="-1"><img src="site/scw-wide.jpg" alt="" loading="lazy"><span><b>SPANISH CIVIL WAR</b>Spain 1936–39 · en español</span></a><a href="into-europe/" aria-hidden="true" tabindex="-1"><img src="site/ie-wide.jpg" alt="" loading="lazy"><span><b>INTO EUROPE</b>Italy 1943–45</span></a></div></div>
  </div>
- <div class="mq-hi"><h1>EVERY BATTLEFIELD HAS A <em>STORY.</em></h1><p>Free guides that plan your route, find the exact spot with no signal, and tell you what happened there. Pick a guide to open it, or <a class="mq-ex" href="#sample">explore an example stop</a>.</p></div>
- <div class="mq-list">
+ <div class="mq-col" id="collection">
+  <small>THE COLLECTION</small>
+  <h2>PICK YOUR BATTLEFIELD</h2>
+  <div class="mq-list">
   <details class="mq-ec"><summary><img src="welcome-wide.jpg" alt=""><span><b>EASY COMPANY</b><small>Normandy · Holland · Germany</small></span><i aria-hidden="true">›</i></summary>
    <div class="sub"><a href="normandy.html">1 · Normandy <span>›</span></a><a href="holland-bastogne.html">2 · Holland &amp; Bastogne <span>›</span></a><a href="germany-austria.html">3 · Germany &amp; Austria <span>›</span></a></div>
   </details>
@@ -374,7 +415,7 @@ if(location.hash==="#sample")addEventListener("DOMContentLoaded",function(){var 
   <a class="mq-row" href="into-europe/"><img src="site/ie-wide.jpg" alt=""><span><b>INTO EUROPE</b><small>Italy 1943–45</small></span><i aria-hidden="true">›</i></a>
   <div class="mq-row mq-soon"><div class="mq-ph">SOON</div><span><b>THE GREAT WAR IN BELGIUM</b><small>WWI 1914–18 · coming soon</small></span></div>
  </div>
- <a class="mq-how" href="#how"><span class="h">HOW IT WORKS <span>Scroll ↓</span></span><b>01 PLOT YOUR ROUTE · 02 FIND THE EXACT SPOT · 03 KEEP THE STORY</b></a>
+ </div>
 </section>
 
 
