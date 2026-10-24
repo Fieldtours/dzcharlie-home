@@ -325,6 +325,17 @@ footer nav span a{color:#ece4cc}
 @media (max-width:700px){.sample{padding:56px 0}.about{padding:60px 0}.scard,.acard,.fix{padding:24px 20px}.fix b{font-size:24px}.sample .gh h2,.about .gh h2{font-size:40px}}
 </style>
 
+<style id="cards-css">
+.which{background:#fffdf6;border-left:6px solid var(--red);padding:18px 24px;margin:0 0 30px;display:flex;gap:20px;align-items:baseline}
+.which b{font-family:var(--label);font-weight:400;font-size:14px;letter-spacing:3px;color:var(--red-t);white-space:nowrap}
+.which p{margin:0;font-size:18px;line-height:1.5;color:var(--ink2)}
+.gfacts{list-style:none;margin:8px 0 0;padding:14px 0 0;border-top:1px solid rgba(255,255,255,.18);display:grid;grid-template-columns:110px minmax(0,1fr);gap:6px 14px;font-size:16px;line-height:1.4}
+.gfacts li{display:contents}
+.gfacts b{font-family:var(--label);font-weight:400;font-size:13px;letter-spacing:2px;text-transform:uppercase;opacity:.8;padding-top:2px}
+.guide .act .actlabel{font-family:var(--label);font-size:13px;letter-spacing:2px;text-transform:uppercase;text-align:center;opacity:.8}
+.mq-hi a.mq-ex{color:#f0c46b;text-decoration:underline}
+@media (max-width:700px){.which{flex-direction:column;gap:6px;padding:16px 18px}.which p{font-size:16px}.gfacts{grid-template-columns:96px minmax(0,1fr);font-size:15px}}
+</style>
 </head>
 <body>
 <section class="mq" aria-label="DZ Charlie field guides">
@@ -334,7 +345,7 @@ footer nav span a{color:#ece4cc}
    <a href="#how">How it works</a><a href="#sample">Try a stop</a><a href="places/">Site directory</a><a href="#about">Who makes this</a><a href="visit/">Trip ideas</a><a href="#downloads">Download the PDFs</a><a href="spanish-civil-war/es.html" lang="es">Guía en español</a>
   </nav></details>
  </div>
- <div class="mq-hi"><h1>EVERY BATTLEFIELD HAS A <em>STORY.</em></h1><p>Free guides that plan your route, find the exact spot with no signal, and tell you what happened there. Pick a guide to open it:</p></div>
+ <div class="mq-hi"><h1>EVERY BATTLEFIELD HAS A <em>STORY.</em></h1><p>Free guides that plan your route, find the exact spot with no signal, and tell you what happened there. Pick a guide to open it, or <a class="mq-ex" href="#sample">explore an example stop</a>.</p></div>
  <div class="mq-list">
   <details class="mq-ec"><summary><img src="welcome-wide.jpg" alt=""><span><b>EASY COMPANY</b><small>Normandy · Holland · Germany</small></span><i aria-hidden="true">›</i></summary>
    <div class="sub"><a href="normandy.html">1 · Normandy <span>›</span></a><a href="holland-bastogne.html">2 · Holland &amp; Bastogne <span>›</span></a><a href="germany-austria.html">3 · Germany &amp; Austria <span>›</span></a></div>
@@ -361,15 +372,15 @@ footer nav span a{color:#ece4cc}
         <a href="#guides">The guides</a>
         <a href="#about">Who makes this</a>
         <a href="#downloads">Downloads</a>
-        <a class="cta" href="#guides">Pick your battlefield</a>
+        <a class="cta" href="#guides">Find a guide</a>
       </nav>
     </div>
     <div class="hero-in">
       <div>
         <div class="kick">FREE BATTLEFIELD GUIDES FOR YOUR PHONE</div>
         <h1 tabindex="-1">EVERY<br>BATTLEFIELD<br>HAS A <em>STORY.</em></h1>
-        <p class="lead">Free guides that turn a road trip into a journey through history, with the route, the maps and the stories built in.</p>
-        <div class="btns"><a class="btn red" href="#guides">Pick your battlefield →</a><a class="btn line" href="#how">See how it works</a></div>
+        <p class="lead">Free guides for visiting battlefields. Say where you are going and how many days you have: the guide plans the route, finds each exact spot with no signal, and tells you what happened there.</p>
+        <div class="btns"><a class="btn red" href="#guides">Find a guide for my trip →</a><a class="btn line" href="#sample">Explore an example stop</a></div>
         <ul class="ticks"><li>✓ Free</li><li>✓ No sign-up</li><li>✓ No app store</li><li>✓ Works offline</li></ul>
       </div>
       <div class="phones" aria-hidden="true">
@@ -453,13 +464,16 @@ footer nav span a{color:#ece4cc}
 
 <section class="guides" id="guides">
   <div class="wrap">
-    <div class="gh"><div><span class="eyebrow">THE COLLECTION</span><h2>PICK YOUR BATTLEFIELD</h2></div><span>Each guide stands alone, with a look drawn from its own war.</span></div>
+    <div class="gh"><div><span class="eyebrow">THE COLLECTION</span><h2>PICK YOUR BATTLEFIELD</h2></div><span>Every guide plans a route for the days you have, works with no signal and is free.</span></div>
+    <div class="which"><b>WHICH GUIDE?</b><p><strong>Easy Company</strong> follows one company of US paratroopers from Normandy to the Eagle's Nest: a focused route, day by day. <strong>Footsteps of WWII</strong> is the wide view: the whole war in Europe, 15 areas from Britain to Moscow. <strong>Into Europe</strong> and <strong>the Spanish Civil War</strong> each cover one country in depth.</p></div>
 
     <article class="guide g-ec">
       <img class="cover" src="welcome-wide.jpg" alt="Easy Company guide cover">
       <div class="txt"><small>WORLD WAR II · 1944–1945 · 5 COUNTRIES</small><h3>EASY COMPANY</h3>
-        <p>Jump with the 506th into Normandy, hold the line at Bastogne, finish at the Eagle's Nest. 118 sites, 90 of them on the ready-made route, and 146 spoken stories.</p></div>
+        <p>Jump with the 506th into Normandy, hold the line at Bastogne, finish at the Eagle's Nest. 118 sites, 90 of them on the ready-made route, and 146 spoken stories.</p>
+        <ul class="gfacts"><li><b>Where</b>Normandy, Holland, Belgium, Germany, Austria</li><li><b>Sites</b>118 sites</li><li><b>Trip length</b>1 to 7 days for each campaign, or a ready-made 5-day route</li><li><b>Language</b>English</li></ul></div>
       <div class="act">
+        <span class="actlabel">Open a campaign</span>
         <a href="normandy.html">1 · Normandy →</a>
         <a href="holland-bastogne.html">2 · Holland &amp; Bastogne →</a>
         <a href="germany-austria.html">3 · Germany &amp; Austria →</a>
@@ -474,9 +488,10 @@ footer nav span a{color:#ece4cc}
         <a class="es-stamp" href="spanish-civil-war/es.html" lang="es" aria-label="¡Ahora en español! Abrir la guía en español"><b>¡AHORA EN</b><b>ESPAÑOL!</b><small>ABRIR LA GUÍA →</small></a>
       </div>
       <div class="txt"><small>SPAIN · 1936–1939 · 8 AREAS</small><h3>THE SPANISH CIVIL WAR</h3>
-        <p>Trenches, ruined villages, air-raid shelters and memorials. Tell it your time; it builds the tour. 158 sites, 6 battle maps.</p></div>
+        <p>Trenches, ruined villages, air-raid shelters and memorials. Tell it your time; it builds the tour. 158 sites, 6 battle maps.</p>
+        <ul class="gfacts"><li><b>Where</b>All of Spain, 8 areas</li><li><b>Sites</b>158 sites</li><li><b>Trip length</b>1 day to 3 weeks</li><li><b>Language</b>English and Spanish</li></ul></div>
       <div class="act">
-        <a href="spanish-civil-war/">Open the guide →</a>
+        <a href="spanish-civil-war/">Open guide →</a>
         <a class="es-btn" href="spanish-civil-war/es.html" lang="es">Abrir en español →</a>
         <a class="sm" href="spanish-civil-war/pdf/The-Spanish-Civil-War-field-guide.pdf" download>Download the PDF</a>
       </div>
@@ -486,9 +501,10 @@ footer nav span a{color:#ece4cc}
     <article class="guide g-uw">
       <img class="cover" src="site/uw-wide.jpg" alt="Footsteps of WWII guide cover: an RAF operations room with plotters around a map table">
       <div class="txt"><small>WORLD WAR II · EUROPE · 1939–1945</small><h3>FOOTSTEPS OF WWII</h3>
-        <p>The whole war in Europe, from Westerplatte to Berlin: Dunkirk, the Battle of Britain, Normandy, Arnhem, Bastogne, Stalingrad and the camps. 160 sites in 15 areas, 12 battle maps.</p></div>
+        <p>The whole war in Europe, from Westerplatte to Berlin: Dunkirk, the Battle of Britain, Normandy, Arnhem, Bastogne, Stalingrad and the camps. 160 sites in 15 areas, 12 battle maps.</p>
+        <ul class="gfacts"><li><b>Where</b>15 areas, from Britain to Moscow</li><li><b>Sites</b>160 sites</li><li><b>Trip length</b>1 day in one area, up to 52 days for the whole war</li><li><b>Language</b>English</li></ul></div>
       <div class="act">
-        <a href="footsteps-of-wwii/">Open the guide →</a>
+        <a href="footsteps-of-wwii/">Open guide →</a>
         <a class="sm" href="footsteps-of-wwii/pdf/Footsteps-of-WWII-Europe-1939-1945.pdf" download>Download the PDF</a>
       </div>
       <span class="tag">NEW</span>
@@ -497,9 +513,10 @@ footer nav span a{color:#ece4cc}
     <article class="guide g-ie">
       <img class="cover" src="site/ie-wide.jpg" alt="Into Europe guide cover: Allied soldiers climbing an Italian hillside">
       <div class="txt"><small>WORLD WAR II · ITALY · 1943–1945</small><h3>INTO EUROPE</h3>
-        <p>The Allied advance through Italy, from the Sicily beaches to the Po: Salerno, Cassino, Anzio, Rome and the Gothic Line. 96 stops over 14 days, 8 battle maps.</p></div>
+        <p>The Allied advance through Italy, from the Sicily beaches to the Po: Salerno, Cassino, Anzio, Rome and the Gothic Line. 96 stops over 14 days, 8 battle maps.</p>
+        <ul class="gfacts"><li><b>Where</b>Italy, from Sicily to the Po</li><li><b>Sites</b>96 sites</li><li><b>Trip length</b>1 day to 3 weeks; the full drive takes 14 days</li><li><b>Language</b>English</li></ul></div>
       <div class="act">
-        <a href="into-europe/">Open the guide →</a>
+        <a href="into-europe/">Open guide →</a>
         <a class="sm" href="into-europe/pdf/Into-Europe-Italy-1943-1945.pdf" download>Download the PDF</a>
       </div>
       <span class="tag">NEW</span>
@@ -522,9 +539,9 @@ footer nav span a{color:#ece4cc}
     <div class="gh"><div><span class="eyebrow">WHO MAKES THIS · HOW WE RESEARCH</span><h2 id="about-h">CHECKED, SOURCED, CORRECTABLE</h2></div><span>History deserves care. Here is who is behind the guides and how every stop is put together.</span></div>
     <div class="agrid">
       <article class="acard who">
-        <div class="mono">JC</div>
-        <h3>Made by JC</h3>
-        <p>DZ Charlie is an independent project by JC, a professional photographer. The guides are free, with no ads and no sign-up, and the site sets no cookies.</p>
+        <div class="mono">DZ</div>
+        <h3>Who we are</h3>
+        <p>DZ Charlie is developed by a group of serious enthusiasts. The guides are free, with no ads and no sign-up, and the site sets no cookies.</p>
         <p>The name comes from Drop Zone C in Normandy, where Easy Company's war began on the night of 5–6 June 1944, and where the first guide starts.</p>
       </article>
       <article class="acard">
@@ -549,7 +566,7 @@ footer nav span a{color:#ece4cc}
     </div>
     <div class="fix">
       <div><b>SPOTTED A MISTAKE?</b><span>Every stop in every guide has a “Report a problem” button, or you can write directly. We read every message and fix confirmed mistakes in the next update.</span></div>
-      <a class="btn" href="mailto:jj28@posteo.uk?subject=DZ%20Charlie%20correction">Send a correction →</a>
+      <a class="btn" href="mailto:dzcharlie44@gmail.com?subject=DZ%20Charlie%20correction">Send a correction →</a>
     </div>
   </div>
 </section>
@@ -583,7 +600,7 @@ footer nav span a{color:#ece4cc}
     <div><b>REMEMBER · EXPLORE · RESPECT</b><p>Many fields are private: view them from the road. Cemeteries and memorials are places of remembrance first.</p></div>
     <nav aria-label="Guides">
       <a href="normandy.html">Normandy</a><a href="holland-bastogne.html">Holland &amp; Bastogne</a><a href="germany-austria.html">Germany &amp; Austria</a><a href="spanish-civil-war/">The Spanish Civil War</a><a href="into-europe/">Into Europe · Italy</a><a href="footsteps-of-wwii/">Footsteps of WWII</a><a href="places/">Site directory</a><a href="visit/">Trip ideas</a>
-      <span>DZ Charlie · field guides made with care by JC · <a href="#about">How we research</a> · <a href="mailto:jj28@posteo.uk?subject=DZ%20Charlie%20correction">Report a mistake</a></span><span>Maps © OpenStreetMap contributors · Manual drawings: US War Department (public domain)</span>
+      <span>DZ Charlie · field guides made with care by serious enthusiasts · <a href="#about">How we research</a> · <a href="mailto:dzcharlie44@gmail.com?subject=DZ%20Charlie%20correction">Report a mistake</a></span><span>Maps © OpenStreetMap contributors · Manual drawings: US War Department (public domain)</span>
     </nav>
   </div>
 </footer>
