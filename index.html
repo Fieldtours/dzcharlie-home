@@ -336,6 +336,25 @@ footer nav span a{color:#ece4cc}
 .mq-hi a.mq-ex{color:#f0c46b;text-decoration:underline}
 @media (max-width:700px){.which{flex-direction:column;gap:6px;padding:16px 18px}.which p{font-size:16px}.gfacts{grid-template-columns:96px minmax(0,1fr);font-size:15px}}
 </style>
+<style id="sdet-css">
+.sample{padding:34px 0}
+.sdet[open]{padding-bottom:20px}
+.strig{list-style:none;cursor:pointer;display:flex;align-items:center;gap:18px;background:#fffdf6;border:2px solid var(--ink);padding:18px 24px;box-shadow:6px 6px 0 var(--red);transition:transform .15s,box-shadow .15s}
+.strig::-webkit-details-marker{display:none}
+.strig:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 var(--red)}
+.strig .si{flex:none;width:46px;height:46px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;font-size:18px}
+.strig .st{flex:1;display:flex;flex-direction:column;gap:2px}
+.strig small{font-family:var(--label);letter-spacing:3px;font-size:13px;color:var(--red-t)}
+.strig b{font-family:var(--disp);font-size:clamp(20px,2.2vw,28px);line-height:1.1}
+.strig .sc{font-family:var(--mono);font-weight:700;font-size:16px;white-space:nowrap}
+.sdet[open] .strig{margin-bottom:34px}.sdet[open] .strig .sc{font-size:0}.sdet[open] .strig .sc:after{content:"Close ▴";font-size:16px}
+@media (max-width:700px){.strig{padding:14px 16px;gap:12px}.strig .si{width:38px;height:38px}.strig .sc{display:none}}
+</style>
+<script>
+/* "Explore an example stop" links open the Try a stop box */
+addEventListener("click",function(e){var a=e.target.closest&&e.target.closest('a[href="#sample"]');if(a){var d=document.getElementById("sdet");if(d)d.open=true}});
+if(location.hash==="#sample")addEventListener("DOMContentLoaded",function(){var d=document.getElementById("sdet");if(d)d.open=true});
+</script>
 </head>
 <body>
 <section class="mq" aria-label="DZ Charlie field guides">
@@ -404,8 +423,10 @@ footer nav span a{color:#ece4cc}
   <p class="wrap stats-note">How we count: 532 sites in the four guides (Easy Company 118, the Spanish Civil War 158, Into Europe 96, Footsteps of WWII 160). About 50 famous places, such as Pegasus Bridge, appear in two guides, so that is roughly 480 different places to stand.</p>
 </section>
 
-<section class="sample" id="sample" aria-labelledby="sample-h">
+<section class="sample" id="sample" aria-label="Try a stop">
   <div class="wrap">
+   <details class="sdet" id="sdet">
+    <summary class="strig"><span class="si" aria-hidden="true">▶</span><span class="st"><small>TRY A STOP</small><b>See exactly what a guide gives you: Pointe du Hoc, D&#8209;Day</b></span><span class="sc" aria-hidden="true">Open ▾</span></summary>
     <div class="gh"><div><span class="eyebrow">TRY A STOP · FROM FOOTSTEPS OF WWII</span><h2 id="sample-h">POINTE DU HOC</h2></div><span>One stop, exactly as the guide gives it to you. Every guide has hundreds like it.</span></div>
     <div class="sgrid">
       <article class="scard">
@@ -430,6 +451,7 @@ footer nav span a{color:#ece4cc}
         <div class="sbtn"><a class="btn red" href="footsteps-of-wwii/?stop=pointe-du-hoc">Explore this stop in the guide →</a><a class="btn line" href="https://www.google.com/maps/dir/?api=1&amp;destination=49.397382,-0.989361" rel="noopener">Directions</a></div>
       </aside>
     </div>
+   </details>
   </div>
 </section>
 
